@@ -1,0 +1,27 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark static-top" [ngClass]="{ 'bg-light': !topOfScreen, 'navbar-light': !topOfScreen }">
+  <div class="container">
+    <a class="navbar-brand" href="">
+      <img src="../../assets/images/logo.png" alt="..." height="36">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Découvrir la Dordogne</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nos logements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onClick="document.getElementById('about-us').scrollIntoView();">A propos de nous</a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-info btn-reservation" [ngClass]="{ 'btn-transparent' : topOfScreen, 'btn-doree' : !topOfScreen }" onClick="document.getElementById('logements').scrollIntoView();">Réserver un séjour</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

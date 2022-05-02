@@ -1,0 +1,37 @@
+<div class="container-homepage">
+  <video autoplay [muted]="'muted'" loop id="myVideo">
+    <source src="../../assets/video/homepage_video.mp4" type="video/mp4">
+    Your browser does not support HTML5 videos.
+  </video>
+
+  <h1 class="main-text">
+    <div>
+      <span>Offrez</span>
+      <span>-vous&nbsp;</span>
+      <span>un&nbsp;</span>
+      <span>coin</span>
+    </div>
+    <div>
+      <span>de&nbsp;</span>
+      <span>paradis</span>
+    </div>
+  </h1>
+  <button type="button" class="btn btn-outline-info btn-homepage" onClick="document.getElementById('texte-intro').scrollIntoView();">
+    Découvrir le domaine
+  </button>
+</div>
+
+<app-introduction class="homepage-section"></app-introduction>
+
+<app-logements class="homepage-section" id="logements"></app-logements>
+
+<app-socialproof class="homepage-section"></app-socialproof>
+
+<app-aboutus class="homepage-section" id="about-us"></app-aboutus>
+
+<div class="container-img-footer homepage-section">
+  <img class="img-footer" src="../../../assets/images/footer-img.jpg">
+  <p class="text-img-footer">A (très) bientôt</p>
+</div>
+
+<app-footer></app-footer>

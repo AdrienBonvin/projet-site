@@ -1,0 +1,27 @@
+.container-about-us {
+width: 100%;
+height: auto;
+padding-top: 7%;
+padding-bottom: 7%;
+
+}
+.container-img {
+  overflow:hidden;
+  height: auto;
+  padding-right: 0%;
+}
+
+.text-about-us {
+background-color: #a6966725;
+padding:7%;
+padding-top: 5%;
+}
+
+.text-about-us p {
+  padding-top: 4%;
+  text-align: justify;
+  line-height: 2vw;
+}
+.img-about-us {
+  width: 100%;
+}

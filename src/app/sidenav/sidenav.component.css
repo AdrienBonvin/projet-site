@@ -1,0 +1,12 @@
+.background-page {
+  height: 855px;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  background-image: url("../../assets/images/backgroundPhoto.jpg");
+  background-position: center top;
+  background-size: 100%;
+  background-size: cover;
+  position:relative
+
+}

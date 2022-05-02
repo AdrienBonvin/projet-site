@@ -1,0 +1,27 @@
+
+<div class="container-logements">
+  <div class="logements row">
+    <h2>Où souhaiteriez-vous <strong>séjourner</strong> ?</h2>
+    <div class="row container-cards">
+          <mat-card class="card col" (click)="goToReservations('CampingCar')" (mouseenter)="isHoverCampingCar = true" (mouseleave)="isHoverCampingCar = false">
+            <mat-icon [hidden]="!isHoverCampingCar">airport_shuttle</mat-icon>
+            <img mat-card-image src="../../../assets/logements/camping-car.jpg">
+            <mat-card-title>Camping car</mat-card-title>
+            <mat-card-content>Pour les voyageurs nomades souhaitant un endroit sûr, propre et agréable pour s'installer.</mat-card-content>
+            <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
+          </mat-card>
+          <mat-card class="card col" (click)="goToReservations('Gite')" (mouseenter)="isHoverGite = true" (mouseleave)="isHoverGite = false">
+            <mat-icon [hidden]="!isHoverGite">local_hotel <!--home--></mat-icon>
+            <img mat-card-image src="../../../assets/logements/chambre_hote_in.jpg">
+            <mat-card-title>Gite</mat-card-title>
+            <mat-card-content>Pour les amoureux du confort souhaitant une nuit au calme dans un gite de caractère.</mat-card-content>
+            <mat-card-actions><a class="btn btn-primary">Réserver</a></mat-card-actions>
+          </mat-card>
+          <mat-card class="card col" (click)="goToReservations('Yourt')" (mouseenter)="isHoverYourt = true" (mouseleave)="isHoverYourt = false" >
+            <mat-icon [hidden]="!isHoverYourt"><!--airline_seat_flat-->landscape</mat-icon>
+            <img mat-card-image src="../../../assets/logements/yourt_out.jpg">
+            <mat-card-title>Yourt</mat-card-title>
+            <mat-card-content>Pour les aventuriers souhaitant une nuit insolite à partager en famille ou entre amis.</mat-card-content>
+            <mat-card-actions><a class="btn btn-primary">Réserver</a></mat-card-actions>
+          </mat-card>
+        </div>

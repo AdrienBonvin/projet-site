@@ -1,0 +1,44 @@
+/* Social proof */
+.container-social-proof {
+  position: relative;
+  margin-top: -0.4%;
+  width: 100%;
+  background-color: #a696672d;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.texte-social-proof {
+  text-align: justify;
+  text-align-last: center;
+  font-family: "Helvetica", serif;
+  font-size: 1vw;
+}
+
+.commentaire {
+  top: 15%;
+  padding: 2%;
+}
+
+#nomPersonne {
+  color: #96a667;
+  font-size: bold;
+}
+
+h2 {
+  font-size: 3vw;
+  font-weight: bolder;
+  color: #a69667;
+}
+
+h3 {
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding-bottom: 4%;
+
+}
+
+/*Evite un overflow des elements col quand ils font la width de l'ecran*/
+.row {
+	--bs-gutter-x: 0;
+}

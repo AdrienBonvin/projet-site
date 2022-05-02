@@ -1,0 +1,38 @@
+.container-text-intro {
+  position: relative;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #fbe39c34
+}
+
+.container-text-intro h2 {
+  font-family: "Helvetica", serif;
+  color: #a69667;
+}
+
+.texte-intro {
+  text-align: center;
+  top: 50%;
+  font-family: "Helvetica", serif;
+  font-size: 1vw;
+  padding: 5%;
+  line-height: 2.5vw;
+}
+
+.texte-intro div {
+  text-align: justify;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+
+
+h2 {
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2vw;
+  font-weight: bold;
+}
