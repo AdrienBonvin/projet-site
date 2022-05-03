@@ -1,0 +1,76 @@
+.container {
+  position:absolute;
+  padding: 0%;
+  top: 112%;
+  width: 72%;
+  left: 16.5%;
+  right: 19%;
+  height: 15%;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.119);
+
+}
+
+.container-champ {
+  padding:0%;
+  margin:0%;
+}
+
+.border {
+  border-right: solid;
+  border-width: thin;
+  border-radius: 1%;
+  border-color: rgba(0, 0, 0, 0.153);
+}
+
+.bouton-selection {
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  height: 100%;
+  padding-top: 6%;
+  padding-left: 10%;
+}
+
+h3 {
+  color: #a6966754;
+  font-weight: bold;
+  font-size: small;
+}
+
+.logement-selectionne {
+color: black;
+font-size: larger;
+font-weight: bold;
+}
+
+.bouton-selection mat-icon {
+position:absolute;
+bottom: 20%;
+right: 5%;
+color: darkgrey;
+}
+
+.container-recherche {
+  background-color:rgb(216, 216, 216) ;
+  height:100%;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 2%;
+
+}
+
+.btn-recherche {
+padding: 3% 15%;
+  font-size: 1vw;
+  color: #ffffff;
+  border-color: #a69667;
+  background-color: #a69667;
+}
+
+
+.btn-recherche:hover {
+  color: #a69667;
+  border-color: #a69667;
+  background-color: #ffffff;
+}
+

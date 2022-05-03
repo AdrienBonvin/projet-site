@@ -1,0 +1,48 @@
+<div class="row container">
+  <div class=" col container-champ">
+    <div class="bouton-selection border" data-bs-toggle="dropdown">
+      <h3>Logement</h3>
+      <div class="logement-selectionne">{{logementSelectionne}}</div>
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </div>
+
+    <ul class="dropdown-menu">
+      <li><a (click)="logementSelectionne='Gite'" class="dropdown-item">Gite</a></li>
+      <li><a (click)="logementSelectionne='Bulle'"class="dropdown-item">Bulle</a></li>
+      <li><a (click)="logementSelectionne='Yourt'"class="dropdown-item">Yourt</a></li>
+      <li><a (click)="logementSelectionne='Camping-car'"class="dropdown-item">Emplacement camping-car</a></li>
+
+    </ul>
+  </div>
+  <div class="col container-champ">
+    <div class="bouton-selection border" data-bs-toggle="dropdown">
+
+      <h3>Dates séjour</h3>
+      <div>{{datesSelectionnees}}</div>
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </div>
+
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item">Action</a></li>
+      <li><a class="dropdown-item">Another action</a></li>
+      <li><a class="dropdown-item">Something else here</a></li>
+    </ul>
+  </div>
+  <div class=" col container-champ">
+    <div class="bouton-selection border" data-bs-toggle="dropdown">
+      <h3>Nb personnes</h3>
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </div>
+
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item">Action</a></li>
+      <li><a class="dropdown-item">Another action</a></li>
+      <li><a class="dropdown-item">Something else here</a></li>
+    </ul>
+  </div>
+  <div class="col container-recherche border" >
+    <button class="btn btn-outline-info btn-recherche">Rechercher</button>
+  </div>
+
+</div>
+
