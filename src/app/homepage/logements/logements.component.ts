@@ -10,7 +10,7 @@ export class LogementsComponent implements OnInit {
 
   isHoverCampingCar = false;
   isHoverGite = false;
-  isHoverYourt = false;
+  isHoverInsolite = false;
 
   constructor(private router: Router) { }
 

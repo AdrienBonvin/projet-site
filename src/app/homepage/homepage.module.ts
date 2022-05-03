@@ -11,6 +11,7 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatCardModule } from '@angular/material/card';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { SearchbarComponent } from './searchbar/searchbar.component';
 
 
 
@@ -21,7 +22,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     LogementsComponent,
     IntroductionComponent,
     FooterComponent,
-    AboutusComponent
+    AboutusComponent,
+    SearchbarComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+
   ],
   exports: [
     HomepageComponent
