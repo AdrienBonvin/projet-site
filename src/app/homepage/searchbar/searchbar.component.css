@@ -1,13 +1,14 @@
-.container {
-  position:absolute;
-  padding: 0%;
-  top: 112%;
-  width: 72%;
-  left: 16.5%;
-  right: 19%;
-  height: 15%;
-  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.119);
+.super-container {
+width: 100%;
+}
 
+.container {
+  margin: auto;
+  padding: 0%;
+  height: 15%;
+  width: 70%;
+  margin-top: -4%;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.119);
 }
 
 .container-champ {
@@ -37,10 +38,16 @@ h3 {
   font-size: small;
 }
 
-.logement-selectionne {
+.input-selectionne {
 color: black;
 font-size: larger;
 font-weight: bold;
+}
+
+.date-selectionne {
+  color: black;
+  font-size: small;
+  font-weight: bold;
 }
 
 .bouton-selection mat-icon {
@@ -50,12 +57,20 @@ right: 5%;
 color: darkgrey;
 }
 
+.bouton-selection mat-datepicker-toggle {
+  position:absolute;
+  bottom: 11%;
+  right: 4%;
+  color: darkgrey;
+  }
+
 .container-recherche {
   background-color:rgb(216, 216, 216) ;
   height:100%;
   text-align: center;
   padding-top: 4%;
   padding-bottom: 2%;
+  z-index: 1;
 
 }
 

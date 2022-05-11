@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Helvetica&display=swap");
-
 .container-homepage {
   position: relative;
   width: 100%;
@@ -9,7 +7,7 @@
 }
 
  #myVideo {
-  height: 100%;
+  width: 100%;
   object-fit: cover;
   right: 0;
   bottom: 0;
@@ -54,7 +52,10 @@
   background-color: #ffffff;
 }
 
+.search-bar{
+  margin-top: -10%;
 
+}
 
 h2 {
   font-size: 3vw;
@@ -76,11 +77,11 @@ h3 {
   width: 100%;
   object-fit: cover;
   filter: brightness(80%);
-
 }
 
 .text-img-footer {
   position:absolute;
+  font-family: "handwriting", "Dawning of a New Day", "Helvetica";
   top: 35%;
   left: 20%;
   right: 20%;

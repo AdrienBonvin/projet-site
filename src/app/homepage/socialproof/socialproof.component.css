@@ -15,6 +15,16 @@
   font-size: 1vw;
 }
 
+.rating-container {
+}
+
+.rating-star{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: auto;
+  color: rgb(201, 201, 0);
+}
+
 .commentaire {
   top: 15%;
   padding: 2%;
@@ -34,8 +44,6 @@ h2 {
 h3 {
   font-size: 1.5vw;
   font-weight: bold;
-  padding-bottom: 4%;
-
 }
 
 /*Evite un overflow des elements col quand ils font la width de l'ecran*/

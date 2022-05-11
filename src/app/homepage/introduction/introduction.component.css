@@ -1,11 +1,11 @@
-.container-text-intro {
+.container-texte-intro {
   position: relative;
   padding-top: 3%;
   padding-bottom: 3%;
   z-index: -1;
 }
 
-.container-text-intro h2 {
+.container-texte-intro h2 {
   font-family: "Helvetica", serif;
   color: #a69667;
 }

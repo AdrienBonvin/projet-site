@@ -18,7 +18,13 @@ export class LogementsComponent implements OnInit {
   }
 
   goToReservations(typeLogement: String){
-    this.router.navigate(['/reservations']);
+    if(typeLogement == 'Insolite') {
+      this.router.navigate(['/bulle']);
+
+    } else {
+      this.router.navigate(['/reservations']);
+
+    }
   }
 
 }
