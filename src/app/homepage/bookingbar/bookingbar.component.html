@@ -1,5 +1,6 @@
 <div class="super-container">
-
+<h3>{{startDate}}</h3>
+<h3></h3>
   <div class="row container">
     <div class=" col container-champ">
       <div class="bouton-selection border" data-bs-toggle="dropdown">
@@ -20,8 +21,8 @@
         <h3>Dates séjour</h3>
 
           <mat-date-range-input [rangePicker]="picker">
-            <input [(ngModel)]="start" class="date-selectionne" matStartDate>
-            <input [(ngModel)]="end" class="date-selectionne" matEndDate>
+            <input [(ngModel)]="startDate" class="date-selectionne" matStartDate>
+            <input [(ngModel)]="endDate" class="date-selectionne" matEndDate>
           </mat-date-range-input>
           <!-- <mat-icon matDatepickerToggleIcon >keyboard_arrow_down</mat-icon>-->
           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>

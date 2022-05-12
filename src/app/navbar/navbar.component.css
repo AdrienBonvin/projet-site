@@ -31,3 +31,7 @@
   .nav-link {
     cursor: pointer;
   }
+
+  .navbar-light div div ul li a {
+    color:#a69667;
+  }

@@ -21,7 +21,26 @@ padding-top: 5%;
   padding-top: 4%;
   text-align: justify;
   line-height: 2vw;
+  margin-left:5%
 }
+
+.text-about-us button {
+  text-align: justify;
+  line-height: 2vw;
+  margin-left:5%
+}
+
 .img-about-us {
   width: 100%;
 }
+
+.btn-primary {
+  background-color: #a69667;
+  border-color: #a69667;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: #a69667;
+}
+

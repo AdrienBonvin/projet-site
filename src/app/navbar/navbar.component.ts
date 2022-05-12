@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
   color: string = "";
   gold: string = "#a69667";
   white: string = "#ffffff";
-
+  fontColor: string = "#000000"
 
   constructor(private router: Router) { }
 
@@ -30,9 +30,11 @@ export class NavbarComponent implements OnInit {
     if (number > 100) {
       this.topOfScreen = false;
       this.color =  this.gold;
+      this.fontColor = "#000000"
     } else {
       this.topOfScreen = true;
       this.color =  this.white;
+      this.fontColor = "#000000"
       //this.color = "rgba(255, 255, 255, 0.55)";
     }
   }

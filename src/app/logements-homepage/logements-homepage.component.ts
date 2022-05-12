@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-logements-homepage',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogementsHomepageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+
+  goToReservations(typeLogement: String){
+    switch(typeLogement) {
+      case 'insolite' :
+        this.router.navigate(['/insolite']);
+        break;
+      case 'camping-car' :
+        this.router.navigate(['/camping-car']);
+        break;
+      case 'gite' :
+        this.router.navigate(['/gite']);
+        break;
+
+    }
+  }
 }

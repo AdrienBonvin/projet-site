@@ -10,7 +10,7 @@ import { LogementsComponent } from './logements/logements.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { SearchbarComponent } from './searchbar/searchbar.component';
+import { BookingbarComponent } from './bookingbar/bookingbar.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -26,7 +26,7 @@ import { FormsModule } from '@angular/forms';
     IntroductionComponent,
     FooterComponent,
     AboutusComponent,
-    SearchbarComponent
+    BookingbarComponent
   ],
   imports: [
     CommonModule,

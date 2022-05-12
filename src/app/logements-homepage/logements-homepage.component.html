@@ -26,23 +26,23 @@
   <div class="logements row">
     <h2>Où souhaiteriez-vous <strong>séjourner</strong> ?</h2>
     <div class="row container-cards">
-          <mat-card class="card col">
+          <mat-card class="card col" (click)="goToReservations('camping-car')">
             <img mat-card-image src="../../../assets/logements/camping-car.jpg">
             <mat-card-title>Camping car</mat-card-title>
             <mat-card-content>Pour les voyageurs nomades souhaitant un endroit sûr, propre et agréable pour s'installer.</mat-card-content>
             <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
           </mat-card>
-          <mat-card class="card col">
+          <mat-card class="card col" (click)="goToReservations('gite')">
             <img mat-card-image src="../../../assets/logements/chambre_hote_in.jpg">
             <mat-card-title>Gite</mat-card-title>
             <mat-card-content>Pour les amoureux du confort souhaitant une nuit au calme dans un gite de caractère.</mat-card-content>
-            <mat-card-actions><a class="btn btn-primary">Réserver</a></mat-card-actions>
+            <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
           </mat-card>
-          <mat-card class="card col">
+          <mat-card class="card col" (click)="goToReservations('insolite')">
             <img mat-card-image src="../../../assets/logements/bulle_out.jpg">
             <mat-card-title>Insolite</mat-card-title>
             <mat-card-content>Pour les aventuriers souhaitant une nuit insolite au plus près de la nature, à partager en famille ou entre amis.</mat-card-content>
-            <mat-card-actions><a class="btn btn-primary">Réserver</a></mat-card-actions>
+            <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
           </mat-card>
         </div>
   </div>
