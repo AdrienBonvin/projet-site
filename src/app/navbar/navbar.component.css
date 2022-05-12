@@ -32,6 +32,10 @@
     cursor: pointer;
   }
 
+  .navbar div div ul li a {
+    font-weight: normal;
+
+  }
   .navbar-light div div ul li a {
     color:#a69667;
   }

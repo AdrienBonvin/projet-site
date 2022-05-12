@@ -8,13 +8,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { SocialproofComponent } from './socialproof/socialproof.component';
 import { LogementsComponent } from './logements/logements.component';
 import { IntroductionComponent } from './introduction/introduction.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from '../footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { BookingbarComponent } from './bookingbar/bookingbar.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import { BookingbarModule } from '../bookingbar/bookingbar.module';
 
 
 
@@ -24,9 +24,7 @@ import { FormsModule } from '@angular/forms';
     SocialproofComponent,
     LogementsComponent,
     IntroductionComponent,
-    FooterComponent,
-    AboutusComponent,
-    BookingbarComponent
+    AboutusComponent
   ],
   imports: [
     CommonModule,
@@ -37,7 +35,8 @@ import { FormsModule } from '@angular/forms';
     MatDatepickerModule,
     MatCardModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    BookingbarModule,
   ],
   exports: [
     HomepageComponent

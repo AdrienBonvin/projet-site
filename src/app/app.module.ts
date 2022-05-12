@@ -15,6 +15,8 @@ import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { BookingbarModule } from './bookingbar/bookingbar.module';
+import { FooterModule } from './footer/footer.module';
 
 
 
@@ -38,11 +40,16 @@ import { MatCardModule } from '@angular/material/card';
     HomepageModule,
     ActivitesModule,
     LogementsHomepageModule,
-    TourismeModule  ],
+    TourismeModule,
+    BookingbarModule,
+    FooterModule
+    ],
   providers: [
     MatDatepickerModule,
     MatIconModule,
     CommonModule,
+    BookingbarModule,
+    FooterModule,
     {
       provide: MAT_DATE_LOCALE,
       useValue: 'fr-FR'

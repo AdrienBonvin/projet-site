@@ -15,38 +15,62 @@
     </h1>
 </div>
 
+<app-bookingbar class="search-bar"></app-bookingbar>
+
+
 <!-- Contenu de la page -->
 <div class="container-texte-intro">
-  <h1>Logements du domaine du Buisson</h1>
+  <h2>Logements du domaine du Buisson</h2>
   <h3>
     Les différents types de logements proposés au domaine du buisson permettent à n'importe qui d'y trouver sa place, allant du gîte tout confort à la bulle au plus près de la nature, tout le monte y trouve son espace.
   </h3>
 </div>
 <div class="container-logements">
   <div class="logements row">
-    <h2>Où souhaiteriez-vous <strong>séjourner</strong> ?</h2>
     <div class="row container-cards">
-          <mat-card class="card col" (click)="goToReservations('camping-car')">
-            <img mat-card-image src="../../../assets/logements/camping-car.jpg">
-            <mat-card-title>Camping car</mat-card-title>
-            <mat-card-content>Pour les voyageurs nomades souhaitant un endroit sûr, propre et agréable pour s'installer.</mat-card-content>
-            <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
-          </mat-card>
           <mat-card class="card col" (click)="goToReservations('gite')">
             <img mat-card-image src="../../../assets/logements/chambre_hote_in.jpg">
             <mat-card-title>Gite</mat-card-title>
-            <mat-card-content>Pour les amoureux du confort souhaitant une nuit au calme dans un gite de caractère.</mat-card-content>
+            <div class="descriptif">Ceci est un bref texte decrivant le type de logement proposé dans cette carte ainsi que d'autres elements liés.</div>
+            <mat-card-content>
+              <div>Capacité :</div>
+              <mat-icon>person</mat-icon>
+              <mat-icon>person</mat-icon>
+              <mat-icon>person</mat-icon>
+              <mat-icon>person</mat-icon>
+              <mat-icon>person</mat-icon>
+              <mat-icon>person</mat-icon>
+              <p>Jusqu'à 6 personnes par chambre</p>
+            </mat-card-content>
             <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
           </mat-card>
           <mat-card class="card col" (click)="goToReservations('insolite')">
             <img mat-card-image src="../../../assets/logements/bulle_out.jpg">
             <mat-card-title>Insolite</mat-card-title>
-            <mat-card-content>Pour les aventuriers souhaitant une nuit insolite au plus près de la nature, à partager en famille ou entre amis.</mat-card-content>
+            <div class="descriptif">Ceci est un bref texte decrivant le type de logement proposé dans cette carte ainsi que d'autres elements liés.</div>
+            <mat-card-content>
+              <div>Capacité :</div>
+              <mat-icon>person</mat-icon>
+              <mat-icon>person</mat-icon>
+              <p>De 1 à 2 personnes</p>
+            </mat-card-content>
+            <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
+          </mat-card>
+          <mat-card class="card col" (click)="goToReservations('camping-car')">
+            <img mat-card-image src="../../../assets/logements/camping-car.jpg">
+            <mat-card-title>Camping car</mat-card-title>
+            <div class="descriptif">Ceci est un bref texte decrivant le type de logement proposé dans cette carte ainsi que d'autres elements liés.</div>
+            <mat-card-content>
+              <div>Capacité :</div>
+              <mat-icon>airport_shuttle</mat-icon>
+              <p>1 Camping car/emplacement</p>
+            </mat-card-content>
             <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
           </mat-card>
         </div>
   </div>
 </div>
 
-
-
+<app-gite *ngIf="isGiteSelected"></app-gite>
+<app-insolite *ngIf="isIsoliteSelected"></app-insolite>
+<app-camping-car *ngIf="isCampingCarSelected"></app-camping-car>

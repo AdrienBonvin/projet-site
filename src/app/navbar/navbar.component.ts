@@ -27,7 +27,7 @@ export class NavbarComponent implements OnInit {
   @HostListener("window:scroll", [])
   onWindowScroll() {
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (number > 100) {
+    if (number > 10) {
       this.topOfScreen = false;
       this.color =  this.gold;
       this.fontColor = "#000000"

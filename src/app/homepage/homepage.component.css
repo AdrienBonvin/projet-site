@@ -1,6 +1,6 @@
 .container-homepage {
   position: relative;
-  width: 100%;
+
   height: 100%;
   overflow: hidden;
 
@@ -16,12 +16,13 @@
 
 .main-text {
   position:absolute;
-  top: 30%;
+  top: 31%;
   left: 20%;
   right: 20%;
-  font-size: 6vw;
-  font-weight: bolder;
+  font-size: 11vw;
+  font-weight: normal;
   text-align: center;
+  font-family: "Handwriting";
   color: rgb(255, 255, 255);
   text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
 }
@@ -31,12 +32,12 @@
 }
 
 .main-text span {
-  letter-spacing: -4px;
+  letter-spacing: -2px;
 }
 
 .btn-homepage {
   position:absolute;
-  top: 60%;
+  top: 62%;
   left: 37%;
   right: 37%;
   font-size: 2vw;
@@ -81,7 +82,7 @@ h3 {
 
 .text-img-footer {
   position:absolute;
-  font-family: "handwriting", "Dawning of a New Day", "Helvetica";
+  font-family: "BrittanySignature";
   top: 35%;
   left: 20%;
   right: 20%;

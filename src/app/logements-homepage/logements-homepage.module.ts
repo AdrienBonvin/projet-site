@@ -10,6 +10,7 @@ import { LogementsHomepageComponent } from './logements-homepage.component';
 import { CampingCarComponent } from './camping-car/camping-car.component';
 import { GiteComponent } from './gite/gite.component';
 import { InsoliteComponent } from './insolite/insolite.component';
+import { BookingbarModule } from '../bookingbar/bookingbar.module';
 
 
 
@@ -18,7 +19,7 @@ import { InsoliteComponent } from './insolite/insolite.component';
     LogementsHomepageComponent,
     CampingCarComponent,
     GiteComponent,
-    InsoliteComponent
+    InsoliteComponent,
   ],
   imports: [
     CommonModule,
@@ -27,8 +28,9 @@ import { InsoliteComponent } from './insolite/insolite.component';
     MatIconModule,
     MatButtonModule,
     MatDatepickerModule,
-    MatCardModule
-  ],
+    MatCardModule,
+    BookingbarModule
+    ],
   exports: [
     LogementsHomepageComponent
   ]

@@ -8,6 +8,10 @@ import { Router } from '@angular/router';
 })
 export class LogementsHomepageComponent implements OnInit {
 
+  isGiteSelected = false;
+  isIsoliteSelected = false;
+  isCampingCarSelected = false;
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -15,17 +19,24 @@ export class LogementsHomepageComponent implements OnInit {
 
 
   goToReservations(typeLogement: String){
+  this.goBackToLogementHomepage();
     switch(typeLogement) {
       case 'insolite' :
-        this.router.navigate(['/insolite']);
+        this.isIsoliteSelected = true;
         break;
       case 'camping-car' :
-        this.router.navigate(['/camping-car']);
+        this.isCampingCarSelected = true;
         break;
       case 'gite' :
-        this.router.navigate(['/gite']);
+        this.isGiteSelected = true;
         break;
 
     }
+  }
+
+  goBackToLogementHomepage () {
+    this.isGiteSelected = false;
+    this.isIsoliteSelected = false;
+    this.isCampingCarSelected = false;
   }
 }

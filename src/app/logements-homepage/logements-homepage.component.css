@@ -9,13 +9,13 @@ position:relative
 
 .background-page h1 {
 color: #fff;
-font-size: 50px;
+font-size: 5vw;
 font-weight: bold;
 text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
 position:absolute;
 top: 10%;
-left: 25%;
-right: 25%;
+left: 20%;
+right: 20%;
 }
 
 .main-img {
@@ -30,48 +30,30 @@ width: 25%;
 cursor: pointer;
 }
 
-.container-text-intro {
+.container-texte-intro {
   position: relative;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  z-index: -1;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
-.container-text-intro h2 {
-  font-family: "Helvetica", serif;
+.container-texte-intro h2 {
   color: #a69667;
-}
-
-.texte-intro {
   text-align: center;
   top: 50%;
   font-family: "Helvetica", serif;
-  font-size: 1vw;
-  padding: 5%;
-  line-height: 2.5vw;
+  padding: 3%;
+  font-size: 3vw;
+  font-weight: bold;
+  margin:0 auto;
 }
 
-.texte-intro div {
+.container-texte-intro h3 {
   text-align: justify;
   padding-left: 20%;
   padding-right: 20%;
+  font-size: 1.5vw;
+  line-height: 2.5vw;
 }
-
-
-
-h2 {
-  font-size: 3vw;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 2vw;
-  font-weight: bold;
-}
-
-
-
-
 
 /** CARDS */
 /* Types de reservations */
@@ -106,16 +88,17 @@ h2 strong {
   height: 80%;
   object-fit: cover;
 }
+
 .img-gite {
   width: 100%;
   height: 80%;
   object-fit: cover;
 }
+
 .img-yourt {
   width: 100%;
   height: 80%;
   object-fit: cover;
-
 }
 
 /*Evite un overflow des elements col quand ils font la width de l'ecran*/
@@ -124,9 +107,10 @@ h2 strong {
 }
 
 .card {
-margin: 3%;
-}
+margin-left: 3%;
+margin-right: 3%;
 
+}
 
 .btn-primary {
 background-color: #a69667;
@@ -146,6 +130,21 @@ border-color: #a69667;
   filter: brightness(60%);
 }
 
+.card:hover mat-card-title {
+  margin-top: -50%;
+}
+
+.card .descriptif {
+  visibility: hidden;
+}
+
+.card:hover .descriptif {
+  visibility: visible;
+  position:absolute;
+  top:13%;
+  width: 100%;
+}
+
 mat-card {
   position: relative;
   padding-top: 0;
@@ -157,6 +156,11 @@ mat-card {
 }
 
 mat-icon {
+  font-size: 1.5vw;
+  color: #000000;
+  text-align: left;
+  margin: -1%;
+  /*
   z-index: 1;
   position: absolute;
   top:20%;
@@ -164,12 +168,22 @@ mat-icon {
   color: #a69667;
   font-size: 6vw;
   text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
+  */
+}
+
+mat-card-content {
+  text-align: left;
 }
 
 mat-card-title {
   color: #a69667;
   font-weight: bold;
 }
+
+
+
+
+
 
 
 
