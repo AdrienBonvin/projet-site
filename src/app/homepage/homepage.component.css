@@ -92,6 +92,18 @@ h3 {
   text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
 }
 
+.nav-link {
+  position:absolute;
+  text-decoration: underline;
+  top: 65%;
+  left: 20%;
+  right: 20%;
+  color: #a69667;
+  text-align: center;
+  text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
+  cursor: pointer;
+}
+
 /*********************/
 /* Effet fondu texte */
 /*********************/

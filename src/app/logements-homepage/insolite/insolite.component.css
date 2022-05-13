@@ -57,6 +57,12 @@
 
   .services-container {
     padding: 2%;
-background-color: blanchedalmond;
-text-align: center;
+    background-color: blanchedalmond;
+    text-align: center;
+  }
+
+  .services-container h3 {
+    padding-bottom: 3%;
+    padding-top: 1%;
+    text-align: center;
   }
