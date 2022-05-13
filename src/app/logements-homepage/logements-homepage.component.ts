@@ -18,7 +18,7 @@ export class LogementsHomepageComponent implements OnInit {
   }
 
 
-  goToReservations(typeLogement: String){
+  goToReservations(typeLogement: string){
   this.goBackToLogementHomepage();
     switch(typeLogement) {
       case 'insolite' :
@@ -32,11 +32,17 @@ export class LogementsHomepageComponent implements OnInit {
         break;
 
     }
+    this.goToElement(typeLogement);
   }
 
   goBackToLogementHomepage () {
     this.isGiteSelected = false;
     this.isIsoliteSelected = false;
     this.isCampingCarSelected = false;
+  }
+
+  goToElement(typeLogement: string){
+    document.getElementById(typeLogement)!.scrollIntoView();
+
   }
 }

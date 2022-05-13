@@ -17,7 +17,9 @@
   }
 
   .main-img {
-  width:100%;
+
+  width:40%;
+  border-radius: 100%;
   }
   /* FIN IMAGE PREFACE */
 

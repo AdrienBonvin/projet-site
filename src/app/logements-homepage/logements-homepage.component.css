@@ -68,11 +68,6 @@ cursor: pointer;
   font-size: 1vw;
 }
 
-.logements div {
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
 h2 {
   font-size: 3vw;
   font-weight: bolder;
@@ -105,55 +100,42 @@ h2 strong {
 .row {
 	--bs-gutter-x: 0;
 }
+/* FIN - Evite un overflow des elements col quand ils font la width de l'ecran */
 
-.card {
-margin-left: 3%;
-margin-right: 3%;
-
-}
-
-.btn-primary {
-background-color: #a69667;
-border-color: #a69667;
-}
-
-.card:hover {
-  cursor: pointer;
-}
-
-.card:hover .btn-primary {
-  background-color: #ffffff;
-  color: #a69667;
-}
-
-.card:hover img {
-  filter: brightness(60%);
-}
-
-.card:hover mat-card-title {
-  margin-top: -50%;
-}
-
-.card .descriptif {
-  visibility: hidden;
-}
-
-.card:hover .descriptif {
-  visibility: visible;
-  position:absolute;
-  top:13%;
-  width: 100%;
-}
-
+/* Contenu des cartes */
 mat-card {
   position: relative;
   padding-top: 0;
 }
-
+.card {
+margin-left: 3%;
+margin-right: 3%;
+}
+.btn-primary {
+background-color: #a69667;
+border-color: #a69667;
+}
 .mat-card-image {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
+.descriptif {
+  padding-bottom: 10%;
+}
+
+/* Hover sur les cartes logements */
+.card:hover {
+  cursor: pointer;
+}
+.card:hover .btn-primary {
+  background-color: #ffffff;
+  color: #a69667;
+}
+.card:hover img {
+  filter: brightness(60%);
+}
+/* Fin - Hover sur les cartes logements */
+
 
 mat-icon {
   font-size: 1.5vw;
@@ -181,8 +163,21 @@ mat-card-title {
 }
 
 
+/* Carte selectionnee */
+.selectionne {
+  background-color: #a6966737;
+}
 
+.selectionne a {
+  color: #a69667;
+  background-color: #ffffff;
 
+}
+
+/* Elements Fille */
+.bold-text {
+font-weight: bolder;
+}
 
 
 

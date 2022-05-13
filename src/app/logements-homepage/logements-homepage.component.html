@@ -22,18 +22,18 @@
 <div class="container-texte-intro">
   <h2>Logements du domaine du Buisson</h2>
   <h3>
-    Les différents types de logements proposés au domaine du buisson permettent à n'importe qui d'y trouver sa place, allant du gîte tout confort à la bulle au plus près de la nature, tout le monte y trouve son espace.
+    Les différents types de logements proposés au domaine du buisson permettent à n'importe qui d'y trouver sa place, allant du gîte tout confort à la bulle au plus près de la nature, nous avons le logement qui vous correspond.
   </h3>
 </div>
 <div class="container-logements">
   <div class="logements row">
     <div class="row container-cards">
-          <mat-card class="card col" (click)="goToReservations('gite')">
+          <mat-card class="card col" [ngClass]="{'selectionne' : isGiteSelected}" (click)="goToReservations('gite')">
             <img mat-card-image src="../../../assets/logements/chambre_hote_in.jpg">
             <mat-card-title>Gite</mat-card-title>
             <div class="descriptif">Ceci est un bref texte decrivant le type de logement proposé dans cette carte ainsi que d'autres elements liés.</div>
             <mat-card-content>
-              <div>Capacité :</div>
+              <div class="bold-text">Capacité :</div>
               <mat-icon>person</mat-icon>
               <mat-icon>person</mat-icon>
               <mat-icon>person</mat-icon>
@@ -44,24 +44,24 @@
             </mat-card-content>
             <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
           </mat-card>
-          <mat-card class="card col" (click)="goToReservations('insolite')">
+          <mat-card class="card col" [ngClass]="{'selectionne' : isIsoliteSelected}" (click)="goToReservations('insolite')">
             <img mat-card-image src="../../../assets/logements/bulle_out.jpg">
             <mat-card-title>Insolite</mat-card-title>
             <div class="descriptif">Ceci est un bref texte decrivant le type de logement proposé dans cette carte ainsi que d'autres elements liés.</div>
             <mat-card-content>
-              <div>Capacité :</div>
+              <div class="bold-text">Capacité :</div>
               <mat-icon>person</mat-icon>
               <mat-icon>person</mat-icon>
               <p>De 1 à 2 personnes</p>
             </mat-card-content>
-            <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
+            <mat-card-actions><a class="btn btn-primary" >Voir l'hébergement</a></mat-card-actions>
           </mat-card>
-          <mat-card class="card col" (click)="goToReservations('camping-car')">
+          <mat-card class="card col" [ngClass]="{'selectionne' : isCampingCarSelected}" (click)="goToReservations('camping-car')">
             <img mat-card-image src="../../../assets/logements/camping-car.jpg">
             <mat-card-title>Camping car</mat-card-title>
             <div class="descriptif">Ceci est un bref texte decrivant le type de logement proposé dans cette carte ainsi que d'autres elements liés.</div>
             <mat-card-content>
-              <div>Capacité :</div>
+              <div class="bold-text">Capacité :</div>
               <mat-icon>airport_shuttle</mat-icon>
               <p>1 Camping car/emplacement</p>
             </mat-card-content>
@@ -71,6 +71,7 @@
   </div>
 </div>
 
-<app-gite *ngIf="isGiteSelected"></app-gite>
+<div id="insolite"></div>
+<app-gite *ngIf="isGiteSelected" id="gite"></app-gite>
 <app-insolite *ngIf="isIsoliteSelected"></app-insolite>
-<app-camping-car *ngIf="isCampingCarSelected"></app-camping-car>
+<app-camping-car *ngIf="isCampingCarSelected" id="campingCap"></app-camping-car>
