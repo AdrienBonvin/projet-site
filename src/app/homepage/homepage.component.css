@@ -1,9 +1,7 @@
 .container-homepage {
   position: relative;
-
   height: 100%;
   overflow: hidden;
-
 }
 
  #myVideo {
@@ -16,10 +14,23 @@
 
 .main-text {
   position:absolute;
-  top: 31%;
+  top: 35%;
+  left: 10%;
+  right: 10%;
+  font-size: 10vw;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Handwriting";
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
+}
+
+.sous-texte {
+  position:absolute;
+  top: 50%;
   left: 20%;
   right: 20%;
-  font-size: 11vw;
+  font-size: 2vw;
   font-weight: normal;
   text-align: center;
   font-family: "Handwriting";
@@ -56,16 +67,6 @@
 .search-bar{
   margin-top: -10%;
 
-}
-
-h2 {
-  font-size: 3vw;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 2vw;
-  font-weight: bold;
 }
 
 .container-img-footer {
@@ -109,6 +110,13 @@ h3 {
 /*********************/
 h1 {
   max-width: 40ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+h1 .sous-texte {
+  max-width: 20ch;
   text-align: center;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
