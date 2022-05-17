@@ -1,13 +1,4 @@
 <!-- Image de pré-face -->
-<div class="background-page">
-  <img class="main-img" src="../assets/logements/yourt_out.jpg">
-  <h1>
-    <div>
-      <span>Logements&nbsp;</span>
-      <span>insolites&nbsp;</span>
-    </div>
-  </h1>
-</div>
 <div class="row container-ensemble">
   <div class="col container-paragraphe-info">
     <h2>Logements insolites</h2>
@@ -15,10 +6,29 @@
       Les différents types de logements proposés au domaine du buisson permettent à n'importe qui d'y trouver sa place, allant du gîte tout confort à la bulle au plus près de la nature, tout le monte y trouve son espace.
     </h3>
   </div>
-  <div class="col container-img-logement">
-    <img class="img-logement" src="../assets/logements/yourt_in.jpg">
+  <div class="carousel-container">
+    <div id="carouselPhotosLogement" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="200">
+          <img src="../assets/logements/bulle_out.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="200">
+          <img src="../assets/logements/yourt_out.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="200">
+          <img src="../assets/logements/chambre_hote_out.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhotosLogement" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselPhotosLogement" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
-
   <div class="row services-container">
     <h3>Caractéristiques</h3>
     <div class="col icon">
