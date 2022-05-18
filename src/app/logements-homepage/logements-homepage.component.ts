@@ -8,37 +8,15 @@ import { Router } from '@angular/router';
 })
 export class LogementsHomepageComponent implements OnInit {
 
-  isGiteSelected = false;
-  isIsoliteSelected = false;
-  isCampingCarSelected = false;
+  typeLogement: string ="";
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-
-  goToReservations(typeLogement: string){
-  this.goBackToLogementHomepage();
-    switch(typeLogement) {
-      case 'insolite' :
-        this.isIsoliteSelected = true;
-        break;
-      case 'camping-car' :
-        this.isCampingCarSelected = true;
-        break;
-      case 'gite' :
-        this.isGiteSelected = true;
-        break;
-
-    }
-    this.goToElement(typeLogement);
-  }
-
   goBackToLogementHomepage () {
-    this.isGiteSelected = false;
-    this.isIsoliteSelected = false;
-    this.isCampingCarSelected = false;
+    this.typeLogement = "";
   }
 
   goToElement(typeLogement: string){

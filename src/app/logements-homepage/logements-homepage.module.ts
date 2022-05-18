@@ -7,19 +7,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
 import { LogementsHomepageComponent } from './logements-homepage.component';
-import { CampingCarComponent } from './camping-car/camping-car.component';
-import { GiteComponent } from './gite/gite.component';
-import { InsoliteComponent } from './insolite/insolite.component';
 import { BookingbarModule } from '../bookingbar/bookingbar.module';
+import { DetailLogementComponent } from './detail-logement/detail-logement.component';
 
 
 
 @NgModule({
   declarations: [
     LogementsHomepageComponent,
-    CampingCarComponent,
-    GiteComponent,
-    InsoliteComponent,
+    DetailLogementComponent,
   ],
   imports: [
     CommonModule,
