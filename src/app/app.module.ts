@@ -16,8 +16,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { BookingbarModule } from './bookingbar/bookingbar.module';
 import { FooterModule } from './footer/footer.module';
-import { DomaineHomepageModule } from './domaine-homepage/domaine-homepage.module';
 import { ReservationModule } from './reservation/reservation.module';
+import { TimelineModule } from './timeline/timeline.module';
 
 
 
@@ -43,8 +43,8 @@ import { ReservationModule } from './reservation/reservation.module';
     TourismeModule,
     BookingbarModule,
     FooterModule,
-    DomaineHomepageModule,
-    ReservationModule
+    ReservationModule,
+    TimelineModule
     ],
   providers: [
     MatDatepickerModule,
@@ -52,8 +52,8 @@ import { ReservationModule } from './reservation/reservation.module';
     CommonModule,
     BookingbarModule,
     FooterModule,
-    DomaineHomepageModule,
     ReservationModule,
+    LogementsHomepageModule,
     {
       provide: MAT_DATE_LOCALE,
       useValue: 'fr-FR'

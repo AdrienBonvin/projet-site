@@ -1,8 +1,7 @@
 /* Types de reservations */
 .container-logements {
   position: relative;
-  padding-top: 6%;
-  padding-bottom: 3%;
+  padding: 0% 5% 5% 5%;
 }
 
 .logements {
@@ -12,17 +11,26 @@
 
 .logements div {
   padding-left: 2%;
-  padding-right: 2%;
+  padding-right: 2% 10%;
 }
 
 h2 {
   font-size: 3vw;
   font-weight: bolder;
+  padding:0%;
 }
 
 h2 strong {
   font-weight: bold;
   color: #a69667;
+}
+
+.left{
+  margin-right:20%
+}
+
+.right{
+  margin-left:20%
 }
 
 .img-camping-car {
@@ -48,7 +56,7 @@ h2 strong {
 }
 
 .card {
-margin: 3%;
+margin: 2%;
 }
 
 .btn-primary {
@@ -82,7 +90,7 @@ mat-card {
 mat-icon {
   z-index: 1;
   position: absolute;
-  top:20%;
+  top:17%;
   left:40%;
   color: #a69667;
   font-size: 6vw;
@@ -92,4 +100,26 @@ mat-icon {
 mat-card-title {
   color: #a69667;
   font-weight: bold;
+}
+
+hr {
+  margin:0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width:20%;
+
+}
+
+@media screen and (max-width: 500px) {
+  .mat-card {
+    margin:10%;
+    margin-top:6%;
+    margin-bottom: 15%;
+  }
+  h2 {
+    padding:10%;
+    font-size: 7vw;
+  }
 }

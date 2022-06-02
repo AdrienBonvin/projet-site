@@ -39,9 +39,9 @@ h3 {
 }
 
 .input-selectionne {
-color: black;
-font-size: larger;
-font-weight: bold;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
 }
 
 .date-selectionne {
@@ -51,10 +51,10 @@ font-weight: bold;
 }
 
 .bouton-selection mat-icon {
-position:absolute;
-bottom: 20%;
-right: 5%;
-color: darkgrey;
+  position:absolute;
+  bottom: 20%;
+  right: 5%;
+  color: darkgrey;
 }
 
 .bouton-selection mat-datepicker-toggle {
@@ -66,20 +66,22 @@ color: darkgrey;
 
 .container-recherche {
   background-color:rgb(216, 216, 216) ;
-  height:100%;
   text-align: center;
-  padding-top: 4%;
-  padding-bottom: 2%;
   z-index: 1;
-
+  padding:0%;
 }
 
 .btn-recherche {
-padding: 3% 15%;
-  font-size: 1vw;
+  font-size: 1.5vw;
   color: #ffffff;
-  border-color: #a69667;
   background-color: #a69667;
+  width:100%;
+  height: 100%;
+  border:none;
+  border-radius: 1%;
+  /* Pour augmenter la hauteur de la bar de reservation */
+  padding:10%;
+
 }
 
 
@@ -87,5 +89,27 @@ padding: 3% 15%;
   color: #a69667;
   border-color: #a69667;
   background-color: #ffffff;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin-top: -40%;
+  }
+
+  .btn-recherche {
+    font-size: 7vw;
+    height: 100%;
+  }
+
+  .bouton-selection {
+    padding:5%;
+    margin:0%;
+  }
+
+  .dropdown-menu {
+    width: 70%;
+  }
 }
 

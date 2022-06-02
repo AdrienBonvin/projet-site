@@ -1,4 +1,5 @@
-<div class="row container-ensemble">
+<hr class="line-start" />
+<div class="container-ensemble" [ngClass]="{'row': !telephonePortable}">
   <div class="col container-paragraphe-info">
     <h2>{{titre}}</h2>
     <h3>{{paragraphe}}</h3>
@@ -30,27 +31,27 @@
   <div *ngIf="typeLogement == 'gite'">
     <div class="row services-container">
       <h3>Caractéristiques</h3>
-      <div class="col icon">
+      <div class="icon" [ngClass]="{'col-2' : !telephonePortable, 'col-4' : telephonePortable}">
         <mat-icon>pets</mat-icon>
         <p>Animaux autorisés</p>
       </div>
-      <div class="col icon">
+      <div class="icon" [ngClass]="{'col-2' : !telephonePortable, 'col-4' : telephonePortable}">
         <mat-icon>weekend</mat-icon>
         <p>Tout comfort</p>
       </div>
-      <div class="col icon">
+      <div class="icon" [ngClass]="{'col-2' : !telephonePortable, 'col-4' : telephonePortable}">
         <mat-icon>wifi</mat-icon>
         <p>Wifi gratuit</p>
       </div>
-      <div class="col icon">
+      <div class="icon" [ngClass]="{'col-2' : !telephonePortable, 'col-4' : telephonePortable}">
         <mat-icon>tv</mat-icon>
         <p>Télévision</p>
       </div>
-      <div class="col icon">
+      <div class="icon" [ngClass]="{'col-2' : !telephonePortable, 'col-4' : telephonePortable}">
         <mat-icon>brightness_2</mat-icon>
         <p>Sous les étoiles</p>
       </div>
-      <div class="col icon">
+      <div class="icon" [ngClass]="{'col-2' : !telephonePortable, 'col-4' : telephonePortable}">
         <mat-icon>filter_hdr</mat-icon>
         <p>au plus près de la nature</p>
       </div>
@@ -60,27 +61,27 @@
   <div *ngIf="typeLogement == 'insolite'">
     <div class="row services-container">
       <h3>Caractéristiques</h3>
-      <div class="col icon">
-        <mat-icon> local_laundry_service</mat-icon>
+      <div class="icon" [ngClass]="{'col' : !telephonePortable, 'col-4' : telephonePortable}">
+        <mat-icon>local_laundry_service</mat-icon>
         <p>Lave-linge</p>
       </div>
-      <div class="col icon">
-        <mat-icon> hotel</mat-icon>
+      <div class="icon" [ngClass]="{'col' : !telephonePortable, 'col-4' : telephonePortable}">
+        <mat-icon>hotel</mat-icon>
         <p>Lit Queen size</p>
       </div>
-      <div class="col icon">
-        <mat-icon> 360</mat-icon>
+      <div class="icon" [ngClass]="{'col' : !telephonePortable, 'col-4' : telephonePortable}">
+        <mat-icon>360</mat-icon>
         <p>Vue panoramique</p>
       </div>
-      <div class="col icon">
+      <div class="icon" [ngClass]="{'col' : !telephonePortable, 'col-4' : telephonePortable}">
         <mat-icon>remove_red_eye</mat-icon>
         <p>Experience unique</p>
       </div>
-      <div class="col icon">
+      <div class="icon" [ngClass]="{'col' : !telephonePortable, 'col-4' : telephonePortable}">
         <mat-icon>panorama_horizontal</mat-icon>
         <p>vue panoramique</p>
       </div>
-      <div class="col icon">
+      <div class="icon" [ngClass]="{'col' : !telephonePortable, 'col-4' : telephonePortable}">
         <mat-icon>nature_people</mat-icon>
         <p>au plus près de la nature</p>
       </div>
@@ -90,58 +91,28 @@
   <div *ngIf="typeLogement == 'camping-car'">
     <div class="row services-container">
       <h3>Caractéristiques</h3>
-      <div class="col icon">
+      <div class="icon" [ngClass]="{'col' : !telephonePortable, 'col-4' : telephonePortable}">
         <mat-icon>pool</mat-icon>
       <p>Acces piscine</p>
       </div>
-      <div class="col icon">
+      <div class="icon" [ngClass]="{'col' : !telephonePortable, 'col-4' : telephonePortable}">
         <mat-icon>smoke_free</mat-icon>
       <p>Interdit de fumer</p>
       </div>
-      <div class="col icon">
+      <div class="icon" [ngClass]="{'col' : !telephonePortable, 'col-4' : telephonePortable}">
         <mat-icon>group</mat-icon>
       <p>Idéal en couple</p>
       </div>
-      <div class="col icon">
+      <div class="icon" [ngClass]="{'col' : !telephonePortable, 'col-4' : telephonePortable}">
         <mat-icon>public</mat-icon>
       <p>Respectueux de l'environnement</p>
       </div>
-      <div class="col icon">
-        <mat-icon>free_breakfast</mat-icon>
-        <p>Petit Déjeuner disponible</p>
-      </div>
-      <div class="col icon">
-        <mat-icon>hot_tub</mat-icon>
-        <p>Accès piscine et SPA</p>
-      </div>
-      <div class="row services-container">
-        <div class="col icon">
-          <mat-icon>restaurant</mat-icon>
-          <p>Paniers repas</p>
-        </div>
-        <div class="col icon">
-          <mat-icon>drive_eta</mat-icon>
-          <p>Parking atitré</p>
-        </div>
-        <div class="col icon">
-          <mat-icon>power</mat-icon>
-          <p>Electricité</p>
-        </div>
-        <div class="col icon">
-          <mat-icon>wc</mat-icon>
-          <p>WC exterieurs à disposition</p>
-        </div>
-        <div class="col icon">
-          <mat-icon>free_breakfast</mat-icon>
-          <p>Petit Déjeuner disponible</p>
-        </div>
-        <div class="col icon">
-          <mat-icon>hot_tub</mat-icon><mat-icon>spa</mat-icon>
-          <p>Accès SPA</p>
-        </div>
-      </div>
     </div>
   </div>
-</div>
 
+  <button type="button" class="btn btn-outline-info btn-reservation">
+    Réservez ce logement
+  </button>
+</div>
+<hr class="line-end"/>
 

@@ -1,8 +1,8 @@
 <div class="container-social-proof">
-  <div class="texte-social-proof row">
+  <div class="texte-social-proof" [ngClass]="{'row' : !telephonePortable}">
     <h2>Demandez à nos derniers hôtes</h2>
     <h3>Demandez directement à nos heureux clients</h3>
-    <div class="raiting-container">
+    <div class="rating-container">
       <mat-icon class="rating-star">star</mat-icon>
       <mat-icon class="rating-star">star</mat-icon>
       <mat-icon class="rating-star">star</mat-icon>
@@ -14,11 +14,11 @@
             Suspendisse vulputate, felis in aliquam interdum, ex neque pretium tortor, sed venenatis elit neque
             ac felis. Ut volutpat quam ac dignissim dictum. Proin eu magna mi. Nam auctor, justo et finibus euismod,
             mauris tortor interdum tellus, lacinia volutpat est dolor vitae nisl. In eu semper diam. Phasellus ac.</p></div>
-      <div class="col-4 commentaire"><p id="nomPersonne">BONVIN Phelim</p>
+      <div class="col-4 commentaire" [hidden]="telephonePortable"><p id="nomPersonne">BONVIN Phelim</p>
         <p>
               Suspendisse vulputate, felis in aliquam interdum, ex neque pretium tortor, sed venenatis elit neque
         </p></div>
-      <div class="col-4 commentaire"><p id="nomPersonne">DUBUISSON Chloé</p>
+      <div class="col-4 commentaire" [hidden]="telephonePortable"><p id="nomPersonne">DUBUISSON Chloé</p>
         <p>
               Suspendisseng vulputate, felis in aliquam interdum, ex neque pretium tortor, sed venenatis elit neque
             ac felis. Ut volutpat quam ac dignissim dictum. Proor vitae nisl. In eu semper diam. Phasellus ac

@@ -1,12 +1,10 @@
-<div class="row container-about-us">
-  <div class="col-6 container-img">
+<div class="row container-about-us" [ngClass]="{'row' : !telephonePortable}">
+  <div class="container-img col-6">
     <img class="img-about-us" src="../../../assets/images/about-us.jpg">
   </div>
   <div class="text-about-us col-6">
     <h2>Nous connaître</h2>
-    <p>Le Domaine du Buisson, c’est une histoire de liens, ceux de la famille Dubuisson, originaire de Normandie. C’est une histoire de lieu, celui d’un domaine agricole qui aujourd’hui encore résonne dans chaque pierre.
-
-    C’est une histoire personnelle et familiale, entrepreneuriale et collective, une histoire attachante au coeur d’un parc naturel remarquable, celui du parc naturel dans lequel ils sont.
+    <p>La Lézardière, c’est une histoire de liens, ceux de la famille Dubuisson, originaire de Normandie. C’est une histoire de lieu, celui d’un domaine agricole qui aujourd’hui encore résonne dans chaque pierre.
     </p>
     <button class="btn btn-primary">En savoir plus</button>
   </div>

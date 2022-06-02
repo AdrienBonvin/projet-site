@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SocialproofComponent implements OnInit {
 
+  telephonePortable: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+    if(window.innerWidth < 700) {
+      this.telephonePortable = true;
+    }
   }
 
 }

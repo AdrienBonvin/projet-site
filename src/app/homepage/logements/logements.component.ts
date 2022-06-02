@@ -11,10 +11,14 @@ export class LogementsComponent implements OnInit {
   isHoverCampingCar = false;
   isHoverGite = false;
   isHoverInsolite = false;
+  telephonePortable: boolean = false;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    if(window.innerWidth < 700) {
+      this.telephonePortable = true;
+    }
   }
 
   goToReservations(typeLogement: String){

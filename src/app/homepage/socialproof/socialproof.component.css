@@ -16,6 +16,7 @@
 }
 
 .rating-container {
+  padding:0%;
 }
 
 .rating-star{
@@ -49,4 +50,37 @@ h3 {
 /*Evite un overflow des elements col quand ils font la width de l'ecran*/
 .row {
 	--bs-gutter-x: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .container-social-proof {
+    padding : 10%;
+
+  }
+  h2 {
+    font-size: 5.5vw;
+    padding-bottom: 5%;
+  }
+  h3 {
+    font-size: 4vw;
+    padding-left: 20%;
+    padding-right: 20%;
+
+  }
+  .commentaire {
+    text-align: justify;
+    width: 100%;
+    padding-left:5%;
+    padding-right:5%;
+  }
+  #nomPersonne {
+    font-size: 4vw;
+
+  }
+  .commentaire p {
+    font-size: 3.5vw;
+  }
+  .rating-container {
+    padding:5%;
+  }
 }

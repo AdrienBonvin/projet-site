@@ -1,7 +1,5 @@
 <div class="super-container">
-<h3>{{startDate}}</h3>
-<h3></h3>
-  <div class="row container">
+  <div class="container" [ngClass]="{'row' : !telephonePortable}">
     <div class=" col container-champ">
       <div class="bouton-selection border" data-bs-toggle="dropdown">
         <h3>Logement</h3>
@@ -33,7 +31,7 @@
     <div class=" col container-champ">
       <div class="bouton-selection border" data-bs-toggle="dropdown">
         <h3>Nb personnes</h3>
-        <div class="input-selectionne">{{nombrePersonnes}}</div>
+        <div class="input-selectionne">{{nombrePersonnes}} </div>
         <mat-icon>keyboard_arrow_down</mat-icon>
       </div>
       <ul class="dropdown-menu">
@@ -48,7 +46,7 @@
       </ul>
     </div>
     <div class="col container-recherche " >
-      <button class="btn btn-outline-info btn-recherche border" (click)="ouvrirMailReservation()">Réserver</button>
+      <button class="btn btn-outline-info btn-recherche" (click)="ouvrirMailReservation()">Réserver</button>
     </div>
   </div>
 </div>

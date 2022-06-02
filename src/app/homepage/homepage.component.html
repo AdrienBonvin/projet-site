@@ -1,5 +1,5 @@
-<div class="container-homepage" id="homepage">
-  <video autoplay [muted]="'muted'" loop id="myVideo">
+<div class="container-homepage" id="homepage" [ngStyle]="{'height': tailleEcran}">
+  <video autoplay [muted]="'muted'" loop id="myVideo" [ngStyle]="{'height': tailleEcran}">
     <source src="../../assets/video/homepage_video.mp4" type="video/mp4">
     Your browser does not support HTML5 videos.
   </video>
@@ -25,15 +25,16 @@
     </div>
   </h2>-->
   <button type="button" class="btn btn-outline-info btn-homepage" onClick="document.getElementById('texte-intro').scrollIntoView();">
-    Découvrir le domaine
+    Découvez le domaine
   </button>
 </div>
 
-<app-bookingbar class="search-bar"></app-bookingbar>
+<app-bookingbar [ngStyle]="{'opacity':isScrolledToTop}" class="search-bar"></app-bookingbar>
 
-<app-logements id="logements"></app-logements>
 
 <app-introduction class="homepage-section"></app-introduction>
+
+<app-logements id="logements"></app-logements>
 
 <app-socialproof></app-socialproof>
 

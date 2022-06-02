@@ -13,6 +13,7 @@ export class NavbarComponent implements OnInit {
   gold: string = "#a69667";
   white: string = "#ffffff";
   fontColor: string = "#000000"
+  pathLogo: string = "../../assets/images/logo.png"
 
   constructor(private router: Router) { }
 
@@ -31,10 +32,12 @@ export class NavbarComponent implements OnInit {
       this.topOfScreen = false;
       this.color =  this.gold;
       this.fontColor = "#000000"
+      this.pathLogo = "../../assets/images/logo_gold.png"
     } else {
       this.topOfScreen = true;
       this.color =  this.white;
       this.fontColor = "#000000"
+      this.pathLogo = "../../assets/images/logo.png"
       //this.color = "rgba(255, 255, 255, 0.55)";
     }
   }

@@ -18,8 +18,14 @@ export class DetailLogementComponent implements OnInit, OnChanges {
   img_carousel_1: string = "";
   img_carousel_2: string = "";
   img_carousel_3: string = "";
+  telephonePortable: boolean = false;
+  tailleColCaracteristiques: number = 2;
 
   ngOnInit(): void {
+    if(window.innerWidth < 700) {
+      this.telephonePortable = true;
+      this.tailleColCaracteristiques = 4;
+    }
     this.chargePageContent();
     }
 
@@ -38,7 +44,7 @@ export class DetailLogementComponent implements OnInit, OnChanges {
         break;
       case 'camping-car' :
         this.titre = "Emplacement camping-car";
-        this.paragraphe = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.";
+        this.paragraphe = "Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.";
         this.img_carousel_1 = this.linkToAssets + Images.logement_camping_car;
         this.img_carousel_2 = this.linkToAssets + Images.logement_camping_car_homepage;
         this.img_carousel_3 = this.linkToAssets + Images.logement_gite_out;

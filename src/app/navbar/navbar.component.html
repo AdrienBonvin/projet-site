@@ -2,10 +2,12 @@
 <nav class="navbar navbar-expand-lg navbar-dark static-top" [ngClass]="{ 'bg-light': !topOfScreen, 'navbar-light': !topOfScreen }">
   <div class="container">
     <a class="navbar-brand" href="">
-      <img src="../../assets/images/logo.png" alt="..." height="36">
+      <img [src]="pathLogo" alt="..." height="42">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    [ngClass]="{ 'menu-hamburger-sombre': !topOfScreen}">
+      <span class="navbar-toggler-icon" ></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
@@ -13,16 +15,13 @@
           <a class="nav-link" href="logements-homepage">Logements</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="domaine-homepage">Le Domaine</a>
+          <a class="nav-link" href="timeline">Découvrir la Dordogne</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="tourisme">La Dordogne</a>
+          <a class="nav-link" onClick="document.getElementById('about-us').scrollIntoView();" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Nous contacter</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" onClick="document.getElementById('about-us').scrollIntoView();">Nous contacter</a>
-        </li>
-        <li class="nav-item">
-          <button type="button" class="btn btn-outline-info btn-reservation" [ngClass]="{ 'btn-transparent' : topOfScreen, 'btn-doree' : !topOfScreen }" onClick="document.getElementById('logements').scrollIntoView();">Réserver un séjour</button>
+          <button type="button" class="btn btn-outline-info btn-reservation" [ngClass]="{ 'btn-transparent' : topOfScreen, 'btn-doree' : !topOfScreen }" onClick="document.getElementById('logements').scrollIntoView();" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Réservez un séjour</button>
         </li>
       </ul>
     </div>

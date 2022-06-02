@@ -9,11 +9,11 @@ overflow:hidden;
 
 .background-page h1 {
 color: #fff;
-font-size: 5vw;
-font-weight: bold;
+font-size: 10vw;
+font-family: "Handwriting";
 text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
 position:absolute;
-top: 10%;
+top: 30%;
 left: 20%;
 right: 20%;
 }
@@ -22,6 +22,10 @@ right: 20%;
 width:100%;
 height: 650px;
 object-fit: cover;
+}
+
+.search-bar {
+  transition: 0.3s ease-in-out;
 
 }
 
@@ -35,14 +39,13 @@ cursor: pointer;
 
 .container-texte-intro {
   position: relative;
-  padding-top: 1%;
+  padding-top: 2%;
   padding-bottom: 1%;
 }
 
 .container-texte-intro h2 {
-  color: #a69667;
+  color: #000000;
   text-align: center;
-  top: 50%;
   font-family: "Helvetica", serif;
   padding: 3%;
   font-size: 3vw;
@@ -50,20 +53,26 @@ cursor: pointer;
   margin:0 auto;
 }
 
+.container-texte-intro strong {
+  color: #a69667;
+}
+
+/*
 .container-texte-intro h3 {
+  opacity: 40%;
   text-align: justify;
   padding-left: 20%;
   padding-right: 20%;
   font-size: 1.5vw;
-  line-height: 2.5vw;
+  line-height: 1.5vw;
 }
+*/
 
 /** CARDS */
 /* Types de reservations */
 .container-logements {
   position: relative;
-  padding-top: 6%;
-  padding-bottom: 3%;
+  padding: 2% 5%;
 }
 
 .logements {
@@ -78,7 +87,7 @@ h2 {
 
 h2 strong {
   font-weight: bold;
-  color: #a69667;
+  color: #04d300;
 }
 
 .img-camping-car {
@@ -111,8 +120,7 @@ mat-card {
   padding-top: 0;
 }
 .card {
-margin-left: 3%;
-margin-right: 3%;
+  margin : 2%;
 }
 .btn-primary {
 background-color: #a69667;
@@ -145,15 +153,16 @@ mat-icon {
   color: #000000;
   text-align: left;
   margin: -1%;
-  /*
+}
+
+.icone-image{
   z-index: 1;
   position: absolute;
-  top:20%;
+  top:15%;
   left:40%;
   color: #a69667;
   font-size: 6vw;
   text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
-  */
 }
 
 mat-card-content {
@@ -181,6 +190,57 @@ mat-card-title {
 .bold-text {
 font-weight: bolder;
 }
+
+@media screen and (max-width: 500px) {
+  .background-page h1 {
+    top: 14%;
+    font-size: 22vw;
+  }
+
+  .container-logements {
+    padding: 0%;
+  }
+
+  .background-page span {
+    padding-bottom:10%;
+    letter-spacing: 0;
+  }
+
+    .mat-card {
+      margin:10%;
+      margin-top:6%;
+      margin-bottom: 15%;
+    }
+
+    .container-texte-intro h2 {
+      font-size: 7vw;
+      padding: 12%;
+    }
+
+    .container-texte-intro h3 {
+      padding-left: 15%;
+      padding-right: 15%;
+      font-size: 4vw;
+      text-align: justify;
+      line-height: 7vw;
+    }
+
+    mat-card div {
+      font-size: 4vw;
+    }
+    mat-card-content mat-icon {
+      padding-top:1%;
+      font-size: 5vw;
+    }
+
+    mat-card-actions a {
+      margin-bottom: 3%;
+    }
+
+    .icone-image{
+      opacity: 0%;
+    }
+  }
 
 
 

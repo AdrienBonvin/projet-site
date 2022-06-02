@@ -1,6 +1,5 @@
 .container-homepage {
   position: relative;
-  height: 100%;
   overflow: hidden;
 }
 
@@ -48,7 +47,7 @@
 
 .btn-homepage {
   position:absolute;
-  top: 62%;
+  top: 68%;
   left: 37%;
   right: 37%;
   font-size: 2vw;
@@ -88,9 +87,29 @@
 }
 
 
+@media screen and (max-width: 500px) {
+  .main-text {
+    top: 14%;
+    font-size: 22vw;
+  }
+  .main-text span{
+    padding-bottom:10%;
+    letter-spacing: 0;
+  }
+  .btn-homepage {
+    top: 68%;
+    font-size: 6vw;
+    left: 15%;
+    right: 15%;
+    padding:4%;
+
+  }
+}
+
+
 .search-bar{
   margin-top: -10%;
-
+  transition: 0.3s ease-in-out;
 }
 
 .container-img-footer {

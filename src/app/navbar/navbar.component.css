@@ -10,23 +10,23 @@
 
 
 .btn-transparent {
-  color: #a69667;
-}
+  color: #ffffff;
+  background-color: #a6966766;
 
+}
 .btn-transparent:hover {
   color: #ffffff;
   background-color: #a69667;
-  }
+}
 
-  .btn-doree {
-    color: #ffffff;
-    background-color: #a69667;
-    }
-
-  .btn-doree:hover {
-    color: #a69667;
-    background-color: #ffffff;
-  }
+.btn-doree {
+  color: #ffffff;
+  background-color: #a69667;
+}
+.btn-doree:hover {
+  color: #a69667;
+  background-color: #ffffff;
+}
 
   .nav-link {
     cursor: pointer;
@@ -37,5 +37,45 @@
 
   }
   .navbar-light div div ul li a {
-    color:#a69667;
+    color:rgb(166, 150, 103);
   }
+
+  /* Modification de la couleur du menu hamburger en vue telephone */
+
+  @media screen and (max-width: 500px) {
+
+  .menu-hamburger-sombre .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(166, 150, 103)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .menu-hamburger-sombre.navbar-toggler {
+    border-color: rgb(166, 150, 103);
+  }
+
+  #navbarSupportedContent {
+    background-color: rgba(248, 249, 250, 0.95);
+    border: solid;
+    border-radius: 2%;
+    border-color: #a69667;
+  }
+
+  #navbarSupportedContent a{
+    color: #a69667;
+  }
+
+  #navbarSupportedContent li{
+    padding:4%;
+    text-align: center;
+  }
+
+  #navbarSupportedContent button{
+    padding:4%;
+    width:90%;
+    margin-top:5%;
+  }
+
+  .btn-transparent {
+    color: #ffffff;
+    background-color: #a69667;
+  }
+}

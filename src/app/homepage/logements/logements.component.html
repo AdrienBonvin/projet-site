@@ -1,8 +1,17 @@
 
 <div class="container-logements">
-  <div class="logements row">
-    <h2>Où souhaiteriez-vous <strong>séjourner</strong> ?</h2>
-    <div class="row container-cards">
+  <hr/>
+  <div class="logements">
+    <div class="left"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <h2>Différents <strong>logements</strong>,
+      </h2>
+    </div>
+    <div class="right" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="200"
+    >
+      <h2>pour différentes <strong>aventures</strong>
+      </h2>
+    </div>
+      <div class="container-cards" [ngClass]="{'row' : !telephonePortable}">
           <mat-card class="card col" (click)="goToReservations('gite')" (mouseenter)="isHoverGite = true" (mouseleave)="isHoverGite = false">
             <mat-icon [hidden]="!isHoverGite">local_hotel <!--home--></mat-icon>
             <img mat-card-image src="../../../assets/logements/chambre_hote_in.jpg">

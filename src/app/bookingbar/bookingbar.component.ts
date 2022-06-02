@@ -9,16 +9,24 @@ import { DatePipe, formatDate } from '@angular/common'
 })
 export class BookingbarComponent implements OnInit {
 
-  logementSelectionne!: string;
+  logementSelectionne: string = "";
   datesSelectionnees!: Date;
   nombrePersonnes!: number;
   mailText:string = "";
   startDate!: Date;
-  endDate!: Date
+  endDate!: Date;
+  telephonePortable: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+    if(window.innerWidth < 700) {
+      this.telephonePortable = true;
+      this.logementSelectionne = "_"
+      this.nombrePersonnes = 2;
+    }
   }
+
 
   ouvrirMailReservation(){
     // Reussir a utiliser DatePipe pour reformater, sans faire Ecran Blanc, puis Commit !
