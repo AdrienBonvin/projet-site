@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import gsap from 'gsap';
 
 @Component({
   selector: 'app-timeline',
@@ -7,11 +6,12 @@ import gsap from 'gsap';
   styleUrls: ['./timeline.component.css']
 })
 export class TimelineComponent implements OnInit {
+  tailleEcran: string = "";
 
   constructor() { }
 
   ngOnInit(): void {
-
+    this.tailleEcran = window.innerHeight + 'px';
   }
 
 }
