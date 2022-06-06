@@ -3,14 +3,15 @@
     <div class=" col container-champ">
       <div class="bouton-selection border" data-bs-toggle="dropdown">
         <h3>Logement</h3>
-        <div class="input-selectionne">{{logementSelectionne}}</div>
+        <div *ngIf="logementSelectionne == null" class="empty-input">Empty</div>
+        <div *ngIf="logementSelectionne != null" class="input-selectionne">{{logementSelectionne}}</div>
         <mat-icon>keyboard_arrow_down</mat-icon>
       </div>
 
       <ul class="dropdown-menu">
         <li><a (click)="logementSelectionne='Gite'" class="dropdown-item">Gite</a></li>
         <li><a (click)="logementSelectionne='Bulle'"class="dropdown-item">Bulle</a></li>
-        <li><a (click)="logementSelectionne='Yourt'"class="dropdown-item">Yourt</a></li>
+        <li><a (click)="logementSelectionne='Chambre-hote'"class="dropdown-item">Chambre d'hôte</a></li>
         <li><a (click)="logementSelectionne='Camping-car'"class="dropdown-item">Emplacement camping-car</a></li>
       </ul>
     </div>
@@ -31,17 +32,21 @@
     <div class=" col container-champ">
       <div class="bouton-selection border" data-bs-toggle="dropdown">
         <h3>Nb personnes</h3>
-        <div class="input-selectionne">{{nombrePersonnes}} </div>
+        <div *ngIf="nombrePersonnes == null" class="empty-input">Empty</div>
+        <div *ngIf="nombrePersonnes != null" class="input-selectionne">{{nombrePersonnes}}</div>
         <mat-icon>keyboard_arrow_down</mat-icon>
       </div>
       <ul class="dropdown-menu">
         <li><a (click)="nombrePersonnes=1" class="dropdown-item">1</a></li>
-        <li><a (click)="nombrePersonnes=2" class="dropdown-item">2</a></li>
-        <li><a (click)="nombrePersonnes=3" class="dropdown-item">3</a></li>
-        <li><a (click)="nombrePersonnes=4" class="dropdown-item">4</a></li>
-        <li><a (click)="nombrePersonnes=5" class="dropdown-item">5</a></li>
-        <li><a (click)="nombrePersonnes=6" class="dropdown-item">6</a></li>
-        <li><a (click)="nombrePersonnes=6" class="dropdown-item">Adapter le nombre au logement choisi</a></li>
+        <li><a *ngIf='logementSelectionne != "Camping-car"'(click)="nombrePersonnes=2" class="dropdown-item">2</a></li>
+        <li><a *ngIf='logementSelectionne != "Camping-car" && logementSelectionne != "Bulle"'
+          (click)="nombrePersonnes=3" class="dropdown-item">3</a></li>
+        <li><a *ngIf='logementSelectionne != "Camping-car" && logementSelectionne != "Bulle"'
+          (click)="nombrePersonnes=4" class="dropdown-item">4</a></li>
+        <li><a *ngIf='logementSelectionne != "Camping-car" && logementSelectionne != "Bulle"'
+          (click)="nombrePersonnes=5" class="dropdown-item">5</a></li>
+        <li><a *ngIf='logementSelectionne != "Camping-car" && logementSelectionne != "Bulle"'
+          (click)="nombrePersonnes=6" class="dropdown-item">6</a></li>
 
       </ul>
     </div>

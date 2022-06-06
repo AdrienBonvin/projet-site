@@ -8,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class TimelineComponent implements OnInit {
   tailleEcran: string = "";
 
+
   constructor() { }
 
   ngOnInit(): void {
     this.tailleEcran = window.innerHeight + 'px';
   }
 
+  openWebsite(url: string){
+    window.open(url);
+  }
 }

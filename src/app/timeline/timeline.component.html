@@ -1,44 +1,93 @@
-<img class="main-img" src="../assets/images/homepage-histoire.jpg" [ngStyle]="{'height': tailleEcran}">
+<div class="background-page">
+  <img class="main-img" src="../../assets/images/homepage-histoire.jpg" [ngStyle]="{'height': tailleEcran}">
 
-    <h1>Création de Timeline</h1>
+  <h1 class="main-text">Visitez la Dordogne</h1>
+  <h2 class="sous-texte">à travers son histoire</h2>
+
+</div>
 
     <div class="box-timeline">
 
         <div class="ligne"></div>
 
-        <div class="rond r1">&#127944;</div>
-        <div class="rond r2">&#128167;</div>
-        <div class="rond r3">&#128187;</div>
-        <div class="rond r4">&#128293;</div>
+        <div class="rond r1">2022</div>
+        <div class="rond r2">1939</div>
+        <div class="rond r3">1572</div>
+        <div class="rond r4">1360</div>
+        <div class="rond r5">-52</div>
+        <div class="rond r6">-725</div>
+        <div class="rond r7">- 100 000</div>
 
 
         <div class="box b1"  data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
-            <h2>Lorem ipsum dolor sit amet.</h2>
+          <img class="box-img" src="../../assets/timeline/actuelle.jpg" [ngStyle]="{'height': tailleEcran}">
+          <div class="box-content">
+            <h3>Aujourd'hui.</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi maxime doloremque tempora exercitationem, minima eos impedit odit quia culpa voluptatum harum unde repellat commodi?
             </p>
-            <a href="#" class="btn">Lorem Ipsum</a>
+            <a (click)="openWebsite('https://www.dordogne-perigord-tourisme.fr/')" class="btn">En apprendre plus</a>
+          </div>
         </div>
-        <div class="box b2" data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
-            <h2>Lorem ipsum dolor sit amet.</h2>
+        <div class="box b2" data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
+          <img class="box-img" src="../../assets/timeline/contemporain.jpg" [ngStyle]="{'height': tailleEcran}">
+          <div class="box-content">
+            <h3>Époque contemporaine.</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi maxime doloremque tempora exercitationem, minima eos impedit odit quia culpa voluptatum harum unde repellat commodi?
+              En 1939 et 1940, la Dordogne accueille environ 80 000 Alsaciens et 6 000 Mosellans7. À partir de l'armistice de juin 1940, le département est divisé en deux.
             </p>
-            <a href="#" class="btn">Lorem Ipsum</a>
+            <a (click)="openWebsite('https://espritdepays.com/histoire-du-perigord')" class="btn">En apprendre plus</a>
+          </div>
         </div>
         <div class="box b3" data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
-            <h2>Lorem ipsum dolor sit amet.</h2>
+          <img class="box-img" src="../../assets/timeline/moderne.jpg" [ngStyle]="{'height': tailleEcran}">
+          <div class="box-content">
+          <h3>Époque moderne.</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi maxime doloremque tempora exercitationem, minima eos impedit odit quia culpa voluptatum harum unde repellat commodi?
+              À la mort de Jeanne d'Albret, en 1572, son fils Henri de Bourbon, hérite du royaume de Navarre et du comté de Périgord. En 1584, Henri de Navarre, n'ayant pas d'argent pour doter sa sœur, Catherine de Bourbon.
             </p>
-            <a href="#" class="btn">Lorem Ipsum</a>
+            <a (click)="openWebsite('https://espritdepays.com/histoire-du-perigord')" class="btn">En apprendre plus</a>
+          </div>
         </div>
-        <div class="box b4" data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
-            <h2>Lorem ipsum dolor sit amet.</h2>
+        <div class="box b4" data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
+          <img class="box-img" src="../../assets/timeline/moyen-age.jpg" [ngStyle]="{'height': tailleEcran}">
+          <div class="box-content">
+          <h3>Moyen Âge.</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi maxime doloremque tempora exercitationem, minima eos impedit odit quia culpa voluptatum harum unde repellat commodi?
-            </p>
-            <a href="#" class="btn">Lorem Ipsum</a>
+              Le Périgord se structure sous la forme d'un comté carolingien, dont la dynastie subsiste jusqu'au xive siècle. De nombreux conflits émaillent cette période, en particulier les raids normands du xe siècle.
+              <a (click)="openWebsite('https://espritdepays.com/histoire-du-perigord')" class="btn">En apprendre plus</a>
+            </div>
         </div>
+        <div class="box b5" data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
+          <img class="box-img" src="../../assets/timeline/antiquite.jpg" [ngStyle]="{'height': tailleEcran}">
+          <div class="box-content">
+          <h3>Antiquité.</h3>
+          <p>
+            Les Pétrocores (le peuple celte peuplant les vallées de l'Isle, de la Vézère et de l'Auvézère principalement) envoient à Vercingétorix environ 5 000 guerriers pour l'aider à affronter les légions romaines de Jules César.
+          </p>
+          <a (click)="openWebsite('https://espritdepays.com/histoire-du-perigord')" class="btn">En apprendre plus</a>
+        </div>
+        </div>
+      <div class="box b6" data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
+        <img class="box-img" src="../../assets/timeline/neolithique.jpg" [ngStyle]="{'height': tailleEcran}">
+        <div class="box-content">
+          <h3>Néolithique et Protohistoire.</h3>
+          <p>
+            Diffusion de la culture campaniforme depuis les Charentes. Invasion progressive de Proto-Celtes, les Ibères (culture des champs d'urnes et rites d'incinération) et des Celtes de Gaule..
+          </p>
+          <a (click)="openWebsite('https://espritdepays.com/histoire-du-perigord')" class="btn">En apprendre plus</a>
+      </div>
+    </div>
+    <div class="box b7" data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
+      <img class="box-img" src="../../assets/timeline/paleolithique.jpg" [ngStyle]="{'height': tailleEcran}">
+      <div class="box-content">
+        <h3>Paléolithique.</h3>
+        <p>
+          Premiers peuplements avérés en Périgord par l'Homme de Néandertal (sites de La Ferrassie, Le Moustier, Le Regourdou). Disparition progressive de l'Homme de Néandertal remplacé par l'Homme de Cro-Magnon.
+        </p>
+        <a (click)="openWebsite('https://espritdepays.com/histoire-du-perigord')" class="btn">En apprendre plus</a>
+      </div>
+    </div>
 
     </div>
+

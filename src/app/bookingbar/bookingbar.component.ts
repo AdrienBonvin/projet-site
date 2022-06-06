@@ -9,7 +9,7 @@ import { DatePipe, formatDate } from '@angular/common'
 })
 export class BookingbarComponent implements OnInit {
 
-  logementSelectionne: string = "";
+  logementSelectionne!: string;
   datesSelectionnees!: Date;
   nombrePersonnes!: number;
   mailText:string = "";
@@ -22,8 +22,6 @@ export class BookingbarComponent implements OnInit {
   ngOnInit(): void {
     if(window.innerWidth < 700) {
       this.telephonePortable = true;
-      this.logementSelectionne = "_"
-      this.nombrePersonnes = 2;
     }
   }
 

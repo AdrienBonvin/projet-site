@@ -44,6 +44,12 @@ h3 {
   font-weight: bold;
 }
 
+.empty-input {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+
 .date-selectionne {
   color: black;
   font-size: small;

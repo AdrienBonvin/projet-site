@@ -9,9 +9,13 @@
   font-size: 1vw;
 }
 
+.logements-texte {
+  padding:5%;
+}
+
 .logements div {
   padding-left: 2%;
-  padding-right: 2% 10%;
+  padding-right: 2%;
 }
 
 h2 {
@@ -26,11 +30,11 @@ h2 strong {
 }
 
 .left{
-  margin-right:20%
+  margin-right:20%;
 }
 
 .right{
-  margin-left:20%
+  margin-left:20%;
 }
 
 .img-camping-car {
@@ -119,7 +123,18 @@ hr {
     margin-bottom: 15%;
   }
   h2 {
-    padding:10%;
-    font-size: 7vw;
+    font-size: 6vw;
+    padding: 2%;
+  }
+  .logements-texte{
+    padding:5%;
+  }
+  .left{
+    margin-right:10%;
+    text-align: left;
+  }
+  .right{
+    margin-left:10%;
+    text-align: right;
   }
 }

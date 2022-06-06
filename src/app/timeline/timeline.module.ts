@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TimelineComponent } from './timeline.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -9,7 +10,8 @@ import { TimelineComponent } from './timeline.component';
     TimelineComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatIconModule
   ], exports: [
     TimelineComponent
   ]
