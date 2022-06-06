@@ -13,8 +13,8 @@
       </div>
     </div>
       <div class="container-cards" [ngClass]="{'row' : !telephonePortable}">
-        <div data-aos="fade-up-right" data-aos-anchor-placement="bottom-bottom">
-          <mat-card class="card col" (click)="goToReservations('gite')" (mouseenter)="isHoverGite = true" (mouseleave)="isHoverGite = false">
+        <div class="col" data-aos="fade-up-right">
+          <mat-card class="card" (click)="goToReservations('gite')" (mouseenter)="isHoverGite = true" (mouseleave)="isHoverGite = false">
             <mat-icon [hidden]="!isHoverGite">local_hotel <!--home--></mat-icon>
             <img mat-card-image src="../../../assets/logements/chambre_hote_in.jpg">
             <mat-card-title>Gite</mat-card-title>
@@ -22,8 +22,8 @@
             <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
           </mat-card>
       </div>
-      <div data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom">
-          <mat-card class="card col" (click)="goToReservations('insolite')" (mouseenter)="isHoverInsolite = true" (mouseleave)="isHoverInsolite = false" >
+      <div class="col" data-aos="fade-up-left" data-aos-delay="200">
+          <mat-card class="card" (click)="goToReservations('insolite')" (mouseenter)="isHoverInsolite = true" (mouseleave)="isHoverInsolite = false" >
             <mat-icon [hidden]="!isHoverInsolite"><!--airline_seat_flat-->landscape</mat-icon>
             <img mat-card-image src="../../../assets/logements/bulle_out.jpg">
             <mat-card-title>Insolite</mat-card-title>
@@ -31,8 +31,8 @@
             <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
           </mat-card>
         </div>
-        <div data-aos="fade-up-right" data-aos-anchor-placement="bottom-center">
-          <mat-card class="card col" (click)="goToReservations('camping-car')" (mouseenter)="isHoverCampingCar = true" (mouseleave)="isHoverCampingCar = false">
+        <div class="col" data-aos="fade-up-right" data-aos-delay="400">
+          <mat-card class="card" (click)="goToReservations('camping-car')" (mouseenter)="isHoverCampingCar = true" (mouseleave)="isHoverCampingCar = false">
             <mat-icon [hidden]="!isHoverCampingCar">airport_shuttle</mat-icon>
             <img mat-card-image src="../../../assets/logements/camping-car.jpg">
             <mat-card-title>Camping car</mat-card-title>
