@@ -7,6 +7,7 @@ import { TourismeComponent } from './tourisme/tourisme.component';
 import { DetailLogementComponent } from './logements-homepage/detail-logement/detail-logement.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -16,6 +17,8 @@ const routes: Routes = [
   { path: 'logements-homepage', component: LogementsHomepageComponent },
     { path: 'detail-logement', component: DetailLogementComponent },
   { path: 'timeline', component: TimelineComponent },
+  { path: 'about-us', component: AboutUsComponent },
+
 
 
 

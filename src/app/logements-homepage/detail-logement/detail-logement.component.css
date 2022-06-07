@@ -79,6 +79,13 @@
   background-color: #ffffff;
 }
 
+.carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.carousel-control-prev:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 @media screen and (max-width: 500px) {
   .container-ensemble{
     padding: 5% 10%;

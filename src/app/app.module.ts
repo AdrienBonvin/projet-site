@@ -18,6 +18,8 @@ import { BookingbarModule } from './bookingbar/bookingbar.module';
 import { FooterModule } from './footer/footer.module';
 import { ReservationModule } from './reservation/reservation.module';
 import { TimelineModule } from './timeline/timeline.module';
+import { AboutusComponent } from './homepage/aboutus/aboutus.component';
+import { AboutUsModule } from './about-us/about-us.module';
 
 
 
@@ -44,7 +46,8 @@ import { TimelineModule } from './timeline/timeline.module';
     BookingbarModule,
     FooterModule,
     ReservationModule,
-    TimelineModule
+    TimelineModule,
+    AboutUsModule
     ],
   providers: [
     MatDatepickerModule,

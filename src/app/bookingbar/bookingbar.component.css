@@ -70,6 +70,10 @@ h3 {
   color: darkgrey;
   }
 
+  .dropdown-menu {
+    width: 17.5%;
+  }
+
 .container-recherche {
   background-color:rgb(216, 216, 216) ;
   text-align: center;

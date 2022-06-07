@@ -11,12 +11,8 @@
 
 .text-about-us {
 background-color: #a6966725;
-padding:7%;
-padding-top: 5%;
-padding-right: 5%;
+padding: 5%;
 margin-right: 3%;
-margin-left: -3%;
-z-index: -1;
 }
 
 .text-about-us p {

@@ -18,7 +18,9 @@
           <a class="nav-link" href="timeline">Découvrir la Dordogne</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" onClick="document.getElementById('about-us').scrollIntoView();" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Nous contacter</a>
+          <a class="nav-link" href="about-us">
+            Qui sommes nous ?
+          </a>
         </li>
         <li class="nav-item">
           <button type="button" class="btn btn-outline-info btn-reservation" [ngClass]="{ 'btn-transparent' : topOfScreen, 'btn-doree' : !topOfScreen }" onClick="document.getElementById('logements').scrollIntoView();" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Réservez un séjour</button>
