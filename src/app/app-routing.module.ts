@@ -24,6 +24,7 @@ const routes: Routes = [
 
 
   // Wildcard route for a 404 page
+  /** Il faut que je génère une page 404 personalisée au site, cela permet une meilleure expérience utilisateur, et les robots Google semblent reconnaitre les pages 404 persos et donner des points dessus */
   { path: '**', component: HomepageComponent }
 ];
 

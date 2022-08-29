@@ -1,5 +1,6 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { FeaturePopupComponent } from '../common/feature-popup/feature-popup.component';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+
+  @ViewChild('featurePopup', {static: false}) popup!: FeaturePopupComponent;
 
   topOfScreen: boolean = true;
   color: string = "";
@@ -18,6 +21,7 @@ export class NavbarComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+
   }
 
   goToReservations(){
@@ -43,7 +47,11 @@ export class NavbarComponent implements OnInit {
   }
 
   changeLanguage() {
+  }
 
+  reservation () {
+    let text = "Au clic sur le bouton de réservation, la page affichera un calendrier contenant les dates réservables et les dates déjà réservées."
+    this.popup.open(text);
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, OnInit, SimpleChange, SimpleChanges } from '@angular/core';
-import { Images } from 'src/app/common/images';
+import { Images } from 'src/app/common/enum/images';
 @Component({
   selector: 'app-detail-logement',
   templateUrl: './detail-logement.component.html',
