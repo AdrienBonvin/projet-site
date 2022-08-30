@@ -40,3 +40,14 @@
     color: rgb(255, 255, 255);
     text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
   }
+
+  .about-us-body {
+    height:100vh;
+  }
+
+  .about-us-body h1 {
+    height:100vh;
+    text-align: center;
+    padding: 20%;
+  }
+

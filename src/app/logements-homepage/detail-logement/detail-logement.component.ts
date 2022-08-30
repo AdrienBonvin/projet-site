@@ -1,5 +1,6 @@
-import { Component, Input, OnChanges, OnInit, SimpleChange, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChange, SimpleChanges, ViewChild } from '@angular/core';
 import { Images } from 'src/app/common/enum/images';
+import { FeaturePopupComponent } from 'src/app/common/feature-popup/feature-popup.component';
 @Component({
   selector: 'app-detail-logement',
   templateUrl: './detail-logement.component.html',
@@ -9,6 +10,8 @@ export class DetailLogementComponent implements OnInit, OnChanges {
 
   @Input()
   typeLogement!: string;
+
+  @ViewChild('featurePopup', {static: false}) popup!: FeaturePopupComponent;
 
   constructor() { }
 
@@ -59,5 +62,9 @@ export class DetailLogementComponent implements OnInit, OnChanges {
     }
   }
 
+  reservation() {
+    let text = "Au clic sur le bouton 'Reservez ce logement', l'application enverra un mail à la boite mail de la lezardiere. Plus tard une section pourrait s'ouvrir avec le choix des dates, ainsi que le choix des prestations sous forme de cases à cocher si vous souhaiterez en faire, par exemple [ ] pannier repas avec bouteille de champagne (+25€), [ ] décoration florale de la chambre (+10€)"
+    this.popup.open(text);
+  }
 
 }

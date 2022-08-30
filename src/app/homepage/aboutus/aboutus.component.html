@@ -4,8 +4,9 @@
   </div>
   <div class="text-about-us col">
     <h2>Nous connaître</h2>
-    <p>La Lézardière, c’est une histoire de liens, ceux de la famille Dubuisson, originaire de Normandie. C’est une histoire de lieu, celui d’un domaine agricole qui aujourd’hui encore résonne dans chaque pierre.
+    <p>La Lézardière, c’est une histoire de liens, ceux de la famille Dubuisson, originaire de Normandie. C’est une histoire de lieu, celui d’un domaine riche en histoire, qui aujourd’hui encore résonne dans chaque pierre.
     </p>
-    <button class="btn btn-primary" href="about-us">En savoir plus</button>
+    <button class="btn btn-primary" (click)="goToAboutUs()">En savoir plus</button>
   </div>
-  </div>
+  <app-feature-popup #featurePopup></app-feature-popup>
+</div>

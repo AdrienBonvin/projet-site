@@ -9,6 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 import { LogementsHomepageComponent } from './logements-homepage.component';
 import { BookingbarModule } from '../bookingbar/bookingbar.module';
 import { DetailLogementComponent } from './detail-logement/detail-logement.component';
+import { CustomCommonModule } from '../common/custom-common.module';
 
 
 
@@ -19,6 +20,7 @@ import { DetailLogementComponent } from './detail-logement/detail-logement.compo
   ],
   imports: [
     CommonModule,
+    CustomCommonModule,
     NavbarModule,
     BrowserAnimationsModule,
     MatIconModule,
