@@ -1,5 +1,6 @@
 .container-ensemble{
   padding: 2% 5%;
+  position:relative;
 }
 
 .container-paragraphe-info {
@@ -38,9 +39,12 @@
 
   .services-container {
     padding: 2%;
-    background-color: #a69667;
+    background-color: #a6966709;
     text-align: center;
-    color: white;
+    color: #a69667;
+    border:solid;
+    border-color: #a69667;
+    border-width: 15px;
   }
 
   .services-container h3 {

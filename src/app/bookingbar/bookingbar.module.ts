@@ -7,6 +7,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
+import { CustomCommonModule } from '../common/custom-common.module';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule,
     MatFormFieldModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,CustomCommonModule
   ],
   exports: [
     BookingbarComponent

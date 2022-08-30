@@ -50,7 +50,7 @@ export class NavbarComponent implements OnInit {
   }
 
   reservation () {
-    let text = "Au clic sur le bouton de réservation, la page affichera un calendrier contenant les dates réservables et les dates déjà réservées."
+    let text = "Au clic sur le bouton de réservation, la page affichera une selection du type de logement, ainsi qu'un calendrier contenant les dates réservables et les dates déjà réservées."
     this.popup.open(text);
   }
 

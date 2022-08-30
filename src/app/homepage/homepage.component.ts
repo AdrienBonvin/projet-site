@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { FeaturePopupComponent } from '../common/feature-popup/feature-popup.component';
 
 @Component({
   selector: 'app-homepage',
@@ -30,5 +31,4 @@ constructor() { }
       this.telephonePortable = true;
     }
   }
-
 }

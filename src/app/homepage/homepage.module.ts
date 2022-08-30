@@ -15,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { BookingbarModule } from '../bookingbar/bookingbar.module';
+import { CustomCommonModule } from '../common/custom-common.module';
 
 
 
@@ -37,6 +38,7 @@ import { BookingbarModule } from '../bookingbar/bookingbar.module';
     MatFormFieldModule,
     FormsModule,
     BookingbarModule,
+    CustomCommonModule
   ],
   exports: [
     HomepageComponent

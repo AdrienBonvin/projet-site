@@ -9,14 +9,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { LogementsHomepageModule } from './logements-homepage/logements-homepage.module';
-import { TourismeModule } from './tourisme/tourisme.module';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { BookingbarModule } from './bookingbar/bookingbar.module';
 import { FooterModule } from './footer/footer.module';
-import { ReservationModule } from './reservation/reservation.module';
 import { TimelineModule } from './timeline/timeline.module';
 import { AboutusComponent } from './homepage/aboutus/aboutus.component';
 import { AboutUsModule } from './about-us/about-us.module';
@@ -42,10 +40,8 @@ import { AboutUsModule } from './about-us/about-us.module';
     HomepageModule,
     ActivitesModule,
     LogementsHomepageModule,
-    TourismeModule,
     BookingbarModule,
     FooterModule,
-    ReservationModule,
     TimelineModule,
     AboutUsModule
     ],
@@ -55,7 +51,6 @@ import { AboutUsModule } from './about-us/about-us.module';
     CommonModule,
     BookingbarModule,
     FooterModule,
-    ReservationModule,
     LogementsHomepageModule,
     {
       provide: MAT_DATE_LOCALE,
