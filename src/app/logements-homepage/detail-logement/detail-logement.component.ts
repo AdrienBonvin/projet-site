@@ -53,8 +53,8 @@ export class DetailLogementComponent implements OnInit, OnChanges {
         this.img_carousel_3 = this.linkToAssets + Images.logement_gite_out;
         break;
       case 'gite' :
-        this.titre = "Location gite";
-        this.paragraphe = "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.";
+        this.titre = "Location du gîte du clos d'Adam";
+        this.paragraphe = "Le Gîte du Clos d'Adam est un refuge confortable pour jusqu'à 6 personnes, niché au cœur d'un domaine forestier paisible en Dordogne, en France. Ce gîte offre un cadre intime et paisible pour les vacanciers en quête de ressourcement. Avec ses 2 chambres confortables, ses 2 salons dont un pouvant être transformé en chambre supplémentaire, et sa salle d'eau, le Gîte du Clos d'Adam est le choix parfait pour les petits groupes ou les familles. Profitez de l'environnement calme et naturel du Clos d'Adam tout en explorant les nombreuses activités et visites de la région environnante. Le Gîte du Clos d'Adam est le choix parfait pour ceux qui cherchent à se ressourcer en toute tranquillité.";
         this.img_carousel_1 = this.linkToAssets + Images.logement_gite_out;
         this.img_carousel_2 = this.linkToAssets + Images.logement_gite_in;
         this.img_carousel_3 = this.linkToAssets + Images.logement_gite_out;

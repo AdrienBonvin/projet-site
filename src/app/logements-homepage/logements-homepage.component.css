@@ -192,6 +192,11 @@ mat-card-title {
 font-weight: bolder;
 }
 
+.disabled {
+  pointer-events:none;
+  opacity:0.3;
+}
+
 @media screen and (max-width: 500px) {
   .background-page h1 {
     top: 14%;

@@ -42,12 +42,34 @@
   }
 
   .about-us-body {
-    height:100vh;
   }
 
   .about-us-body h1 {
-    height:100vh;
+    font-family: "Handwriting";
+    font-size: 6em;
     text-align: center;
-    padding: 20%;
+    padding: 5%;
+  }
+
+  .about-us-body .paragraphe {
+    font-size:1.5em;
+    margin:0;
+    text-align: center;
+    padding: 0% 8%;
+  }
+
+  .about-us-body .single {
+    font-size:1.5em;
+    margin:0;
+    text-align: center;
+    padding: 2%;
+  }
+
+  .about-us-body .papy {
+    font-family: "Handwriting";
+    font-size:3em;
+    margin:0;
+    text-align: center;
+    padding: 5%;
   }
 

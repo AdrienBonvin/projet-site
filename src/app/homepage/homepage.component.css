@@ -127,24 +127,23 @@
 .text-img-footer {
   position:absolute;
   font-family: "BrittanySignature";
-  top: 35%;
+  top: 2%;
   left: 20%;
   right: 20%;
   font-size: 4vw;
   text-align: center;
   color: #a69667;
-  text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
 }
 
 .nav-link {
   position:absolute;
   text-decoration: underline;
-  top: 65%;
+  bottom:10%;
   left: 20%;
   right: 20%;
   color: #a69667;
   text-align: center;
-  text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
+  text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 200%);
   cursor: pointer;
 }
 

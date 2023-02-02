@@ -8,6 +8,24 @@
   overflow:hidden;
   padding-left: 5%;
   padding-right: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-img img{
+height:80%;
+width:100%;
+object-fit: contain;
+}
+.container-img p {
+  margin:0;
+  height:20%;
+  font-family: "Handwriting";
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-about-us {

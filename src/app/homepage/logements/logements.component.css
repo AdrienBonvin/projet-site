@@ -55,6 +55,11 @@ h2 strong {
 
 }
 
+.disabled {
+  pointer-events:none;
+  opacity:0.3;
+}
+
 /*Evite un overflow des elements col quand ils font la width de l'ecran*/
 .row {
 	--bs-gutter-x: 0;

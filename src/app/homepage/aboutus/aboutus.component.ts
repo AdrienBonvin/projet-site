@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { FeaturePopupComponent } from 'src/app/common/feature-popup/feature-popup.component';
 
 @Component({
@@ -12,7 +13,7 @@ export class AboutusComponent implements OnInit {
 
   telephonePortable: boolean = false;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     if(window.innerWidth < 700) {
@@ -21,8 +22,7 @@ export class AboutusComponent implements OnInit {
   }
 
   goToAboutUs() {
-    let text = "Au clic sur le bouton 'En savoir plus...', afficher une page sur la famille Dubuisson, sur vous deux, sur votre maison, les alentours, ou tout simplement mettre tout ça dans la page 'Qui Sommes Nous ?' dans le menu en haut et renvoyer à cette page"
-    this.popup.open(text);
+    this.router.navigate(['/about-us']);
   }
 
 }

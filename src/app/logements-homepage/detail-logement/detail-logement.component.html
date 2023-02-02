@@ -1,7 +1,9 @@
 <hr class="line-start" />
+<div class="col container-paragraphe-info">
+  <h2>{{titre}}</h2>
+</div>
 <div class="container-ensemble" [ngClass]="{'row': !telephonePortable}">
   <div class="col container-paragraphe-info">
-    <h2>{{titre}}</h2>
     <h3>{{paragraphe}}</h3>
   </div>
   <div class="carousel-container">
@@ -110,8 +112,36 @@
     </div>
   </div>
 
+<div class="container-infos-logement">
+  <div class="infos-un">
+    <h1>Logement</h1>
+    <ul>
+      <li>Element 1</li>
+      <li>Element 2</li>
+      <li>Element 3</li>
+    </ul>
+  </div>
+  <div class="infos-deux">
+    <h1>Equipements</h1>
+    <ul>
+      <li>Element 1</li>
+      <li>Element 2</li>
+      <li>Element 3</li>
+    </ul>
+  </div>
+  <div class="infos-trois">
+    <h1>Environs</h1>
+    <ul>
+      <li>Element 1</li>
+      <li>Element 2</li>
+      <li>Element 3</li>
+    </ul>
+  </div>
+
+</div>
+
   <button type="button" class="btn btn-outline-info btn-reservation" (click)="reservation()">
-    Réservez ce logement
+    Réserver le logement
   </button>
   <app-feature-popup #featurePopup></app-feature-popup>
 

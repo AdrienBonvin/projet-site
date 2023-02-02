@@ -1,19 +1,23 @@
 .container-ensemble{
   padding: 2% 5%;
   position:relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+    justify-content: center;
 }
 
 .container-paragraphe-info {
   padding-left: 2%;
   padding-right: 2%;
-  padding-top: 2%;
 }
 
 .container-paragraphe-info h2 {
     color: #a69667;
-    text-align: left;
+    text-align: center;
     font-family: "Helvetica", serif;
     font-size: 3vw;
+    padding-top:2%;
     font-weight: bold;
   }
 
@@ -27,24 +31,25 @@
   .carousel-container {
     width: 50%;
     padding-left:3%;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   #carouselPhotosLogement {
-    border:solid;
-    border-color: #a69667;
-    border-width: normal;
 
   }
 
   .services-container {
     padding: 2%;
+    margin-top: 3%;
     background-color: #a6966709;
     text-align: center;
     color: #a69667;
     border:solid;
     border-color: #a69667;
-    border-width: 15px;
+    border-width: 5px;
   }
 
   .services-container h3 {
@@ -69,7 +74,7 @@
 
 .btn-reservation {
   margin: 2% auto;
-  width:40%;
+  width:25%;
   font-size: 2vw;
   padding: 0.8%;
   color: #ffffff;
@@ -88,6 +93,14 @@
 }
 .carousel-control-prev:hover{
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.container-infos-logement {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin:5%;
 }
 
 @media screen and (max-width: 500px) {
