@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ActivitesComponent } from './activites/activites.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LogementsHomepageComponent } from './logements-homepage/logements-homepage.component';
-import { DetailLogementComponent } from './logements-homepage/detail-logement/detail-logement.component';
+import { GiteComponent } from './logements-homepage/gite/gite.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
-  { path: 'activites', component: ActivitesComponent },
   { path: 'logements-homepage', component: LogementsHomepageComponent },
-    { path: 'detail-logement', component: DetailLogementComponent },
+    { path: 'gite', component: GiteComponent },
+
   { path: 'timeline', component: TimelineComponent },
   { path: 'about-us', component: AboutUsComponent },
 

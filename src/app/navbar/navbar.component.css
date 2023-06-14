@@ -1,5 +1,4 @@
 .navbar {
- height: 60px;
  width: 100%;
  transition: 0.5s ease-in-out;
 }
@@ -7,7 +6,6 @@
 .btn-reservation {
   border-color: #a69667;
 }
-
 
 .btn-transparent {
   color: #ffffff;
@@ -39,7 +37,6 @@
     color:rgb(166, 150, 103);
   }
 
-  /* Modification de la couleur du menu hamburger en vue telephone */
 
   @media screen and (max-width: 500px) {
 

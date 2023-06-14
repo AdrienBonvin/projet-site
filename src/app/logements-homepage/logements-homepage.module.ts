@@ -8,15 +8,16 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
 import { LogementsHomepageComponent } from './logements-homepage.component';
 import { BookingbarModule } from '../bookingbar/bookingbar.module';
-import { DetailLogementComponent } from './detail-logement/detail-logement.component';
+import { GiteComponent } from './gite/gite.component';
 import { CustomCommonModule } from '../common/custom-common.module';
+
 
 
 
 @NgModule({
   declarations: [
     LogementsHomepageComponent,
-    DetailLogementComponent,
+    GiteComponent,
   ],
   imports: [
     CommonModule,
@@ -30,7 +31,8 @@ import { CustomCommonModule } from '../common/custom-common.module';
     BookingbarModule
     ],
   exports: [
-    LogementsHomepageComponent
+    LogementsHomepageComponent,
+    GiteComponent
   ]
 })
 export class LogementsHomepageModule { }

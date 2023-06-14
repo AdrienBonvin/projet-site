@@ -1,4 +1,4 @@
-.super-container {
+.booking-container {
 width: 100%;
 }
 
@@ -32,16 +32,28 @@ width: 100%;
   padding-left: 10%;
 }
 
+h1 {
+  color: #a69667;
+  font-weight: bold;
+  font-size: larger;
+}
+
 h3 {
   color: #a6966754;
   font-weight: bold;
   font-size: small;
 }
+p {
+  color: #00000054;
+  font-weight: normal;
+  font-size: small;
+  margin:5em;
+}
 
 .input-selectionne {
   color: black;
   font-size: larger;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .empty-input {
@@ -52,8 +64,7 @@ h3 {
 
 .date-selectionne {
   color: black;
-  font-size: small;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .bouton-selection mat-icon {
@@ -103,7 +114,41 @@ h3 {
 
 .disabled {
   pointer-events:none;
-  opacity:0.2;
+  opacity:0.1;
+}
+
+.form {
+  width:80%;
+}
+
+.btn-outline-info:disabled {
+  border-color: #a90000;
+}
+
+.button-validation {
+  background-color: #a69667;
+  color:white;
+  border-color: #ffffff;
+  margin : 2%;
+  border-radius: 5px;
+  padding: 1em 2em;
+  transition:all 0.3s ease-in-out;
+ }
+
+ .button-validation:hover {
+  color: #a69667;
+  border-color: #a69667;
+  background-color: #ffffff;
+  cursor:pointer;
+}
+
+.btn-annuler:hover {
+  transition:all 0.2s ease-in-out;
+  border:solid 1px darkgrey;
+}
+
+.invalid-input {
+  color: #a90000;
 }
 
 @media screen and (max-width: 500px) {

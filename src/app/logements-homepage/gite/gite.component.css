@@ -1,0 +1,258 @@
+/** Image préface */
+.background-page {
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  position:relative;
+  overflow:hidden;
+  }
+
+  .background-page h1 {
+    color: #fff;
+    font-size: 10vw;
+    font-family: "Handwriting";
+    text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 50%);
+    position:absolute;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+  }
+
+  .main-img {
+  height:100vh;
+  width:100vw;
+  object-fit: cover;
+  filter: brightness(80%);
+  }
+
+.img-texte {
+  object-fit: cover;
+  width:25vw;
+  height:25vw;
+  margin: 30px 5vw;
+}
+
+.container-ensemble{
+  width:100%;
+  padding: 2% 5%;
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: #a69667;
+    text-align: center;
+    font-family: "Helvetica", serif;
+    font-size: 4em;
+    padding: 4% 0 3% 0;
+    font-weight: bold;
+  }
+
+  h3 {
+    text-align: justify;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    line-height: 2.5vw;
+  }
+
+  .carousel-container {
+    width: 50%;
+    padding-left:3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services-container {
+    padding: 2%;
+    margin-top: 3%;
+    background-color: #a6966709;
+    text-align: center;
+    color: #a69667;
+    border:solid;
+    border-color: #a69667;
+    border-width: 5px;
+    flex-wrap: wrap;
+  }
+
+  .services-container h3 {
+    padding-bottom: 2%;
+    text-align: center;
+  }
+
+
+  ul {
+    list-style-type: circle;
+  }
+
+  li {
+    margin: 20px 0;
+  }
+  /*Evite un overflow des elements col quand ils font la width de l'ecran*/
+.row {
+	--bs-gutter-x: 0;
+}
+
+.line-start {
+  width:50%;
+  margin: 0 auto;
+}
+
+.line-end {
+  width:80%;
+  margin: 0 auto;
+}
+
+.btn-reservation {
+  margin: 2% auto;
+  width:25%;
+  font-size: 2vw;
+  padding: 0.8%;
+  color: #ffffff;
+  border-color: #a69667;
+  background-color: #a69667;
+}
+
+.btn-reservation:hover {
+  color: #a69667;
+  border-color: #a69667;
+  background-color: #ffffff;
+}
+
+.carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.carousel-control-prev:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.container-infos-logement {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+  width:100%;
+}
+
+.colonne-info {
+  width:35%;
+}
+
+mat-icon {
+  font-size: 40px;
+  height:40px;
+  width:40px;
+}
+
+.overview {
+  width:50vw;
+}
+
+.end-text-container {
+  width: 100%;
+  margin-top: 5%
+}
+
+.bookingbar-container {
+  margin: 7% 0 5% 0;
+}
+
+@media screen and (max-width: 500px) {
+  .container-ensemble{
+    padding: 5% 10%;
+  }
+
+  .container-paragraphe-info > div {
+    flex-direction: column !important; /* class _utilities.scss qui met la grouille */
+  }
+
+  .background-page h1 {
+    font-size: 7em;
+    text-align: center;
+  }
+
+  .img-texte {
+    width:100%;
+    height : auto;
+  }
+
+  .container-paragraphe-info h2 {
+
+      text-align: center;
+      font-family: "Helvetica", serif;
+      font-size: 6vw;
+      font-weight: bold;
+    }
+
+  h3 {
+      text-align: justify;
+      font-size: 4vw;
+      line-height: 5vw;
+      font-weight: normal;
+      padding: 5% 0%;;
+  }
+
+  .container-infos-logement {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+  }
+
+  h2 {
+    margin-top:1em;
+  }
+  ul {
+    width:80%;
+  }
+
+  .services-container {
+    width:90vw;
+  }
+
+  .colonne-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+  }
+
+  .services-container p {
+    font-size: 3vw;
+  }
+  .services-container .icon {
+    font-size: 3vw;
+  }
+
+  .btn-reservation {
+    margin: 8% auto;
+    width:80%;
+    font-size: 5vw;
+    padding: 2%;
+  }
+
+  .bookingbar-container {
+    margin: 50% 0 20% 0;
+  }
+
+  .end-text-container {
+    width: 100%;
+  }
+
+  .end-text-container h3 {
+    font-weight: bold;
+    width:90%;
+    text-align: center;
+  }
+
+  .end-text-container p {
+    text-align: center;
+    width: 90%;
+  }
+
+}

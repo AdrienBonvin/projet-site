@@ -1,0 +1,160 @@
+<!-- Image de pré-face -->
+<div class="background-page">
+  <img class="main-img" src="../assets/logements/Gite_Escalier.jpg" />
+  <h1>
+    <div class="flex-col">
+      <span>Bienvenue au Gîte&nbsp;</span>
+    </div>
+  </h1>
+</div>
+
+<hr class="line-start" />
+<div class="flex-col container-paragraphe-info">
+  <h2>{{ titre }}</h2>
+</div>
+<div
+  class="container-ensemble flex-row"
+  [ngClass]="{ 'flex-col': telephonePortable }"
+>
+  <div class="container-paragraphe-info">
+    <div class="flex-row">
+      <h3>
+        <div style="font-weight: 800">
+          Arrivée à 17h00 - Départ à 10h00<br />
+          Gîte de caractère 4/6 personnes, 80m² de surfaces habitables
+        </div>
+        <br />
+        <br />
+        Ce gîte conserve l’esprit authentique de la région. Il dispose
+        <b>d’un grand séjour</b> de charme avec une table de ferme et
+        <b>un petit salon convivial</b>. Un coin <b>cuisine</b> équipée d’un
+        <b
+          >four, d’un lave-vaisselle, d’une plaque de cuisson et d’un petit
+          frigidaire</b
+        >. Par un bel escalier en pierre vous accédez à l’étage et ses
+        <b>deux belles chambres</b> : <br />
+        - L’une plus grande avec un lit de 160/200. <br />
+        - L’autre offrant la possibilité de deux lits simples ou d’un lit double
+        selon vos besoins.<br />
+        Etage comportant également une <b>salle de douche et des Wc</b>.<br />
+        <br />
+      </h3>
+      <img
+        class="img-texte"
+        src="../../../assets/logements/Gite_Salon_1_Droite.jpg"
+      />
+    </div>
+    <div class="container-paragraphe-info">
+      <div class="flex-row">
+        <img
+          class="img-texte"
+          src="../../../assets/logements/Gite_Escalier.jpg"
+        />
+        <h3>
+          Vous accèderez en empruntant un authentique escalier de meunier à une
+          mezzanine, ce <b>salon</b> vous offrira des instants en famille ou
+          entre amis avec <b>un canapé lit de deux personnes</b>, un canapé fixe
+          et ses deux fauteuils. Nous pouvons vous installer un lit bébé sur
+          demande.<br />
+          Vous disposez d'une dépendance adjacente avec
+          <b>lave linge, sèche-linge</b> et
+          <b>grand combi frigidaire/congélateur</b>.<br />
+        </h3>
+      </div>
+      <div class="flex-row">
+        <h3>
+          Le gîte propose de nombreuses activités de loisirs grâce à ses
+          infrastructures :<br />
+          - <b>Une salle de sport</b> avec vélo elliptique, tapis de marche, et
+          divers accessoires de remise en forme (fitness, yoga…).<br />
+          -
+          <b>Une piscine couverte et chauffée avec nage à contre courant</b>
+          partagée avec les propriétaires (discrets par nature ;) ).<br />
+          - Une <b>Grande terrasse</b> ensoleillée avec <b>cuisine d’été</b>.
+          <br />
+          - Des Transats et du <b>mobilier d'extérieur</b>.<br />
+          - Un accès au <b>bois privé</b> du clos.<br />
+        </h3>
+        <img class="img-texte" src="../../../assets/logements/Picine1.jpg" />
+      </div>
+      <div class="flex-row">
+        <img
+          class="img-texte"
+          src="../../../assets/logements/Gite_Detail_1.jpg"
+        />
+        <h3>
+          Pour profiter au maximum de vos vacances, nous nous occupons de tous :
+          les lits seront faits à votre arrivée, le linge de maison et les
+          serviettes de bain installés. Seuls les draps de bain pour la piscine
+          sont à prévoir.
+          <i
+            >Vous n’aurez plus qu’à déguster le rafraîchissement de bienvenue
+            mis à votre disposition !</i
+          ><br />
+          <br />
+          <b>Informations particulières :</b><br />
+          Paiement de l’acompte en ligne par virement, le solde à l’arrivée.<br />
+          Les propriétaires sont disponibles et à votre écoute sans toutefois
+          être envahissants!
+          <br /><br />
+          <b>Bon séjour parmi nous !</b>
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-infos-logement">
+  <div class="colonne-info">
+    <div class="flex-row services-container">
+      <h3 style="width: 100%; margin: 30px 0">Caractéristiques</h3>
+      <div
+        *ngFor="let feature of features"
+        style="width: 33%; height: 120px; justify-content: flex-start"
+        class="flex-col"
+      >
+        <div class="icon" class="flex-col">
+          <mat-icon>{{ feature.icon }}</mat-icon>
+          <div>
+            {{ feature.nom }}
+          </div>
+        </div>
+      </div>
+      <div
+        *ngFor="let feature of featuresSpecifiques"
+        style="width: 90%; height: 120px; justify-content: flex-start"
+        class="flex-col"
+      >
+        <div class="icon" class="flex-col">
+          <mat-icon>{{ feature.icon }}</mat-icon>
+          <div>
+            {{ feature.nom }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="colonne-info">
+    <h2>Environs <mat-icon>room</mat-icon></h2>
+    <!--  explore  -->
+    <ul>
+      <li *ngFor="let item of environs">{{ item }}</li>
+    </ul>
+  </div>
+</div>
+<div class="flex-col end-text-container">
+  <h3>
+    Pour connaître <span style="color: #a69667">les disponibilités</span> rien
+    de plus facile :
+  </h3>
+  <p>
+    Il suffie de renseigner votre choix ci dessous, puis de renseigner par la
+    suite vos coordonnées.
+  </p>
+</div>
+<div class="bookingbar-container">
+  <app-bookingbar
+    class="search-bar"
+    [logementSelectionne]="'Gîte'"
+  ></app-bookingbar>
+</div>

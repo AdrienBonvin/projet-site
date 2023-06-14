@@ -64,49 +64,6 @@
 }
 
 
-@media screen and (max-width: 500px) {
-  #myVideo {
-    width: auto;
-  }
-  .main-text {
-    top: 18%;
-    font-size: 22vw;
-  }
-  .main-text span{
-    padding-bottom:10%;
-    letter-spacing: 0;
-  }
-  .btn-homepage {
-    top: 82%;
-    font-size: 6vw;
-    left: 15%;
-    right: 15%;
-    padding:4%;
-
-  }
-}
-
-
-@media screen and (max-width: 500px) {
-  .main-text {
-    top: 14%;
-    font-size: 22vw;
-  }
-  .main-text span{
-    padding-bottom:10%;
-    letter-spacing: 0;
-  }
-  .btn-homepage {
-    top: 68%;
-    font-size: 6vw;
-    left: 15%;
-    right: 15%;
-    padding:4%;
-
-  }
-}
-
-
 .search-bar{
   margin-top: -10%;
   transition: 0.3s ease-in-out;
@@ -145,6 +102,45 @@
   text-align: center;
   text-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 200%);
   cursor: pointer;
+}
+
+
+@media (max-width: 500px) {
+  #myVideo {
+    width: auto;
+  }
+
+  .main-text {
+    top: 18%;
+    font-size: 22vw;
+  }
+  .main-text span{
+    padding-bottom:10%;
+    letter-spacing: 0;
+  }
+  .btn-homepage {
+    top: 82%;
+    font-size: 6vw;
+    left: 15%;
+    right: 15%;
+    padding:4%;
+  }
+
+    /*.main-text {
+    top: 14%;
+    font-size: 22vw;
+  }
+  .main-text span{
+    padding-bottom:10%;
+    letter-spacing: 0;
+  }
+  .btn-homepage {
+    top: 56%;
+    font-size: 6vw;
+    left: 15%;
+    right: 15%;
+    padding:4%;
+  }*/
 }
 
 /*********************/

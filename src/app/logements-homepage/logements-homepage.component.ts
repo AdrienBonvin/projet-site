@@ -44,6 +44,11 @@ export class LogementsHomepageComponent implements OnInit {
 
   goToElement(typeLogement: string){
     document.getElementById(typeLogement)!.scrollIntoView();
+  }
 
+  goToLogement(logement: string){
+    if (logement === 'gite') {
+      this.router.navigate(['/gite']);
+  }
   }
 }

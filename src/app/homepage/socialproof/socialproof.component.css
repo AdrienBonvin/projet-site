@@ -1,86 +1,47 @@
-/* Social proof */
 .container-social-proof {
-  position: relative;
-  margin-top: -0.4%;
-  width: 100%;
-  background-color: #a696672d;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  width:100%;
+  padding:15vh 0 10vh 0;
 }
 
-.texte-social-proof {
-  text-align: justify;
-  text-align-last: center;
-  font-family: "Helvetica", serif;
-  font-size: 1vw;
+.commentaite {
+height : 250px;
+margin-bottom:50px;
 }
 
-.rating-container {
-  padding:0%;
+.arrow {
+  transform: scale(1.5);
 }
 
-.rating-star{
-  padding-top: 2%;
-  padding-bottom: 2%;
-  margin: auto;
-  color: rgb(201, 201, 0);
+.left {
+  margin-right : 7vw;
 }
 
-.commentaire {
-  top: 15%;
-  padding: 2%;
+.right {
+  margin-left : 7vw;
 }
 
-#nomPersonne {
-  color: #96a667;
-  font-size: bold;
+.arrow:hover {
+  cursor:pointer;
+  transform: scale(3);
 }
 
-h2 {
-  font-size: 3vw;
+h1 {
   font-weight: bolder;
+  font-size: 5em;
+  margin-bottom: 10vh;
+}
+
+strong {
   color: #a69667;
 }
 
-h3 {
-  font-size: 1.5vw;
-  font-weight: bold;
-}
-
-/*Evite un overflow des elements col quand ils font la width de l'ecran*/
-.row {
-	--bs-gutter-x: 0;
-}
 
 @media screen and (max-width: 500px) {
   .container-social-proof {
-    padding : 10%;
-
+    padding:8vh 0 15vh 0;
   }
-  h2 {
-    font-size: 5.5vw;
-    padding-bottom: 5%;
-  }
-  h3 {
-    font-size: 4vw;
-    padding-left: 20%;
-    padding-right: 20%;
-
-  }
-  .commentaire {
-    text-align: justify;
-    width: 100%;
-    padding-left:5%;
-    padding-right:5%;
-  }
-  #nomPersonne {
-    font-size: 4vw;
-
-  }
-  .commentaire p {
-    font-size: 3.5vw;
-  }
-  .rating-container {
-    padding:5%;
+  h1 {
+    margin-bottom: 6vh;
+    padding-left:0.3em;
   }
 }

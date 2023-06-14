@@ -4,3 +4,16 @@
    background-color: black;
 }
 
+.logo {
+  height:30px;
+  margin: 0.5% 1%;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+  cursor:pointer;
+}
+
+.footer-info {
+  z-index:1;
+}

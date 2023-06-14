@@ -1,6 +1,6 @@
 .popup-container {
-    position:absolute;
-    top:calc(50vh - 100px);
+    position:fixed;
+    top:calc(50vh - 34vh);
     left:calc(50vw - 250px);
     min-height:100px;
     height:auto;
@@ -11,7 +11,8 @@
     align-items: center;
     justify-content: space-around;
     border:solid;
-    border-color: #a69667;
+    border-color: #212529;
+    border-radius:10px;
     font-weight: bold;
     z-index:10;
  }
@@ -20,15 +21,4 @@
   padding:5%;
  }
 
- button {
-  background-color: #a69667;
-  color:white;
-  border-color: #ffffff;
-  margin : 2%;
- }
 
- button:hover {
-  color: #a69667;
-  border-color: #a69667;
-  background-color: #ffffff;
-}

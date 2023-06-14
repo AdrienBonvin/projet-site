@@ -1,59 +1,230 @@
-<div class="super-container">
-  <div class="container" [ngClass]="{'row' : !telephonePortable}">
-    <div class=" col container-champ">
+<div class="booking-container">
+  <div class="container" [ngClass]="{ row: !telephonePortable }">
+    <div class="col container-champ">
       <div class="bouton-selection border" data-bs-toggle="dropdown">
         <h3>Logement</h3>
         <div *ngIf="logementSelectionne == null" class="empty-input">Empty</div>
-        <div *ngIf="logementSelectionne != null" class="input-selectionne">{{logementSelectionne}}</div>
+        <div *ngIf="logementSelectionne != null" class="input-selectionne">
+          {{ logementSelectionne }}
+        </div>
         <mat-icon>keyboard_arrow_down</mat-icon>
       </div>
 
       <ul class="dropdown-menu">
-        <li><a (click)="logementSelectionne='Gite'" class="dropdown-item">Gite</a></li>
-        <li class="disabled"><a (click)="logementSelectionne='Bulle'"class="dropdown-item">Insolite</a></li>
-        <li class="disabled"><a (click)="logementSelectionne='Chambre-hote'"class="dropdown-item">Chambre d'hôte</a></li>
-        <li class="disabled"><a (click)="logementSelectionne='Camping-car'"class="dropdown-item">Emplacement camping-car</a></li>
+        <li>
+          <a (click)="logementSelectionne = 'Gite'" class="dropdown-item"
+            >Gîte</a
+          >
+        </li>
+        <li class="disabled">
+          <a (click)="logementSelectionne = 'Bulle'" class="dropdown-item"
+            >Insolite</a
+          >
+        </li>
+        <li class="disabled">
+          <a
+            (click)="logementSelectionne = 'Chambre-hote'"
+            class="dropdown-item"
+            >Chambre d'hôte</a
+          >
+        </li>
+        <li class="disabled">
+          <a (click)="logementSelectionne = 'Camping-car'" class="dropdown-item"
+            >Emplacement camping-car</a
+          >
+        </li>
       </ul>
     </div>
     <div class="col container-champ">
       <div class="bouton-selection border" data-bs-toggle="dropdown">
-        <h3>Dates séjour</h3>
-
-          <mat-date-range-input [rangePicker]="picker">
-            <input [(ngModel)]="startDate" class="date-selectionne" matStartDate>
-            <input [(ngModel)]="endDate" class="date-selectionne" matEndDate>
-          </mat-date-range-input>
-          <!-- <mat-icon matDatepickerToggleIcon >keyboard_arrow_down</mat-icon>-->
-          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-          <mat-date-range-picker #picker></mat-date-range-picker>
-
+        <h3 [ngClass]="{ 'invalid-input': !isRangeCorrect }">
+          Dates séjour <span>(7j minimum)</span>
+        </h3>
+        <mat-date-range-input [rangePicker]="picker">
+          <input
+            [(ngModel)]="startDate"
+            class="date-selectionne"
+            [ngClass]="{ 'invalid-input': !isRangeCorrect }"
+            matStartDate
+            (ngModelChange)="onInputChange()"
+          /><br />
+          <input
+            [(ngModel)]="endDate"
+            class="date-selectionne"
+            [ngClass]="{ 'invalid-input': !isRangeCorrect }"
+            matEndDate
+            (ngModelChange)="onInputChange()"
+          />
+        </mat-date-range-input>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
       </div>
     </div>
-    <div class=" col container-champ">
+    <div class="col container-champ">
       <div class="bouton-selection border" data-bs-toggle="dropdown">
         <h3>Nb personnes</h3>
         <div *ngIf="nombrePersonnes == null" class="empty-input">Empty</div>
-        <div *ngIf="nombrePersonnes != null" class="input-selectionne">{{nombrePersonnes}}</div>
+        <div *ngIf="nombrePersonnes != null" class="input-selectionne">
+          {{ nombrePersonnes }}
+        </div>
         <mat-icon>keyboard_arrow_down</mat-icon>
       </div>
       <ul class="dropdown-menu">
-        <li><a (click)="nombrePersonnes=1" class="dropdown-item">1</a></li>
-        <li><a *ngIf='logementSelectionne != "Camping-car"'(click)="nombrePersonnes=2" class="dropdown-item">2</a></li>
-        <li><a *ngIf='logementSelectionne != "Camping-car" && logementSelectionne != "Bulle"'
-          (click)="nombrePersonnes=3" class="dropdown-item">3</a></li>
-        <li><a *ngIf='logementSelectionne != "Camping-car" && logementSelectionne != "Bulle"'
-          (click)="nombrePersonnes=4" class="dropdown-item">4</a></li>
-        <li><a *ngIf='logementSelectionne != "Camping-car" && logementSelectionne != "Bulle"'
-          (click)="nombrePersonnes=5" class="dropdown-item">5</a></li>
-        <li><a *ngIf='logementSelectionne != "Camping-car" && logementSelectionne != "Bulle"'
-          (click)="nombrePersonnes=6" class="dropdown-item">6</a></li>
-
+        <li><a (click)="nombrePersonnes = 1" class="dropdown-item">1</a></li>
+        <li>
+          <a
+            *ngIf="logementSelectionne != 'Camping-car'"
+            (click)="nombrePersonnes = 2"
+            class="dropdown-item"
+            >2</a
+          >
+        </li>
+        <li>
+          <a
+            *ngIf="
+              logementSelectionne != 'Camping-car' &&
+              logementSelectionne != 'Bulle'
+            "
+            (click)="nombrePersonnes = 3"
+            class="dropdown-item"
+            >3</a
+          >
+        </li>
+        <li>
+          <a
+            *ngIf="
+              logementSelectionne != 'Camping-car' &&
+              logementSelectionne != 'Bulle'
+            "
+            (click)="nombrePersonnes = 4"
+            class="dropdown-item"
+            >4</a
+          >
+        </li>
+        <li>
+          <a
+            *ngIf="
+              logementSelectionne != 'Camping-car' &&
+              logementSelectionne != 'Bulle'
+            "
+            (click)="nombrePersonnes = 5"
+            class="dropdown-item"
+            >5</a
+          >
+        </li>
+        <li>
+          <a
+            *ngIf="
+              logementSelectionne != 'Camping-car' &&
+              logementSelectionne != 'Bulle'
+            "
+            (click)="nombrePersonnes = 6"
+            class="dropdown-item"
+            >6</a
+          >
+        </li>
       </ul>
     </div>
-    <div class="col container-recherche " >
-      <button class="btn btn-outline-info btn-recherche" (click)="ouvrirMailReservation()">Réserver</button>
+    <div class="col container-recherche">
+      <button
+        class="btn btn-outline-info btn-recherche"
+        (click)="ouvrirModalReservation()"
+        [disabled]="
+          !isRangeCorrect ||
+          !logementSelectionne ||
+          !startDate ||
+          !endDate ||
+          !nombrePersonnes
+        "
+      >
+        Réserver
+      </button>
+    </div>
+    <div
+      style="position: relative; width: 100vw"
+      class="flex-col"
+      #popupContainer
+    >
+      <app-feature-popup #featurePopup>
+        <div style="text-align: center; padding: 5px">
+          <h1>Dernière étape</h1>
+          <p>
+            Merci de renseigner ci-après vos coordonnées puis de cliquer sur
+            ENVOYER LA DEMANDE RÉSERVATION. Nous nous ferons un plaisir de vous
+            informer sur les disponibilités et confirmer ainsi votre
+            réservation.
+          </p>
+        </div>
+        <form
+          [formGroup]="contactForm"
+          class="form flex-col"
+          (ngSubmit)="sendEmail()"
+        >
+          <!-- Create two input tht are part of a reactiveForm-->
+          <div class="form-field email" style="padding: 10px 0">
+            <input
+              placeholder="E-mail"
+              type="text"
+              formControlName="email"
+              style="padding: 0.5em"
+            />
+          </div>
+          <div class="form-field" style="padding: 10px 0">
+            <input
+              placeholder="Téléphone"
+              type="text"
+              formControlName="telephone"
+              style="padding: 0.5em"
+            />
+          </div>
+          <div class="form-field flex-col" style="padding: 10px 0; width: 100%">
+            <textarea
+              style="
+                margin-bottom: 10%;
+                width: 80%;
+                height: 14vh;
+                padding: 0.5em;
+              "
+              placeholder="Vous pouvez ajouter un commentaire à votre réservation pour toute informations ou demandes spécifiques..."
+              type="text"
+              formControlName="commentaire"
+            ></textarea>
+          </div>
+          <button
+            class="button-validation btn-submit"
+            style="width: 60%"
+            type="submit"
+            [disabled]="!contactForm.valid"
+          >
+            Envoyer la réservation
+          </button>
+          <button
+            class="btn btn-annuler"
+            style="margin-bottom: 5%"
+            type="close"
+            (click)="close()"
+          >
+            Annuler
+          </button>
+        </form>
+      </app-feature-popup>
+
+      <app-feature-popup #error>
+        <div style="width: 80%; color: crimson">
+          Une erreur est survenue lors de l'envoi du message, veuillez nous
+          excuser pour cette gène, et nous vous invitons à nous contacter
+          directement via notre adresse mail (clos.adam@gmail.com) ou par
+          telephone ((+33) 06 53 05 56 35)
+        </div>
+        <button
+          class="btn"
+          style="margin-bottom: 5%"
+          type="close"
+          (click)="close()"
+        >
+          Fermer
+        </button>
+      </app-feature-popup>
     </div>
   </div>
-    <app-feature-popup #featurePopup></app-feature-popup>
-
 </div>

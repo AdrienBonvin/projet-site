@@ -3,36 +3,26 @@
     <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">Le clos d'Adam</h2>
     <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200"
     >reposant et inoubliable</h3>
-    <div class="container-intro">
-      <div class="container-text" [ngClass]="{'col-6' : !telephonePortable}">
+    <div class="container-intro"  [ngClass]="{'flex-col' : telephonePortable, 'flex-row': !telephonePortable}">
+      <div class="container-text">
         <p>
-          Bienvenue au Clos d'Adam, notre gîte de caractère situé dans le charmant village de Cubjac en Périgord Blanc.
-          Dès le portail passé, le charme opère…entre pierres de Limeyrat et chênes verts Le Clos offre un hébergement de 6 personnes. Profitez de notre bois et  des forêts pour randonner et découvrir les environs . Détendez-vous dans la piscine chauffée, sur la terrasse baignée de soleil et sa cuisine d'été  Tout ici invite à partager de bons moments conviviaux…
+          Notre domaine de caractère situé dans le charmant village de Cubjac en Périgord Blanc est idéal pour découvrir ou redécouvrir la Dordogne. Situé à 17 km de Périgueux, 55 km de Sarlat et 70 km de Bergerac, Les trésors de la Dordogne n’attendent que vous.</p>
+          <p [hidden]="telephonePortable">
+            Dès le portail passé, le charme opère… Bienvenue au Clos d'Adam. Entre l’authenticité des bâtisses en pierres de Limeyrat et notre forêt typique de chênes verts, plongez au cœur du patrimoine Périgourdin.
+          </p>
+          <p>
+          Le Clos d’Adam vous offre la possibilité de passer un inoubliable séjour dans son gîte de charme pouvant accueillir jusqu’à 6 personnes.  Entouré de notre bois, de l’Auvézère et des chemins de randonnée, Le Clos d’Adam offre de nombreuses possibilités d’activités sportives…  Et de détente grâce à sa piscine chauffée, sa terrasse baignée de soleil et sa cuisine d'été.
         </p>
-        <p [hidden]="telephonePortable">Le Clos d'Adam est idéal pour découvrir ou redécouvrir la Dordogne Situé à 17 km de Périgeux, 55 km de Sarlat et 70 km de Bergerac,
-            vous pourrez ainsi traverser L’Histoire de France au travers de :
-            - ses sites préhistoriques ( Montignac Lascaux, la Roche st Christophe)..;
-            -  ses grottes ( Tourtoirac, Domme….),
-            - ses 1001 châteaux ( Castelnaut, Beynac, Hautefort…),
-            - ses villes et villages remarquables,
-            - ses jardins merveilleux
-            - sans oublier sa gastronomie locale   avec ses nombreux marchés. ,
-            Le Clos d’Adam offre également de nombreuses activités sportives:
-            Une salle de sport à disposition (tapis de marche, vélo éliptique…)
-            Tapis de Yoga
-            Canoé sur l'Auvézère,( point de départ à quelques minutes du gîte )mais aussi sur la Vézère et la Dordogne.
-            Vélo ( 2 VTC à disposition )
-            Nombreuses randonnées au départ du Clos
-            Salles de sport à Trélissac (mur d’escalade…)
-        </p>
+        <p>
         <b>
-          Votre bien être est notre priorité, nous serons heureux de vous accueillir pour des vacances inoubliables.
+          N’attendez plus, c’est ici que vos vacances commencent !
         </b>
+        </p>
       </div>
       <div class="container-images">
-          <img class ="img1" src="../../../assets/images/piscine-interieure.jpg">
-          <img class ="img2" src="../../../assets/images/domaine_out.jpg">
-          <img class ="img3" src="../../../assets/logements/bulle_out.jpg">
+          <img class ="img1" src="../../../assets/logements/Picine2.jpg">
+          <img class ="img2" src="../../../assets/logements/Gite_Escalier.jpg">
+          <img class ="img3" src="../../../assets/logements/Gite_Detail_1.jpg">
       </div>
     </div>
   </div>

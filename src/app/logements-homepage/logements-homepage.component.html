@@ -1,6 +1,6 @@
 <!-- Image de pré-face -->
 <div class="background-page">
-    <img class="main-img" src="../assets/logements/bulle_out.jpg" [ngStyle]="{'height': tailleEcran}">
+    <img class="main-img" src="../assets/logements/Gite_Salon_2.jpg" [ngStyle]="{'height': tailleEcran}">
     <h1>
       <div>
         <span>Reservez&nbsp;</span>
@@ -31,7 +31,7 @@
             (click)="typeLogement='insolite'"
             (mouseenter)="isHoverInsolite = true"
             (mouseleave)="isHoverInsolite = false">
-            <mat-icon [hidden]="!isHoverInsolite" class="icone-image"><!--airline_seat_flat-->landscape</mat-icon>
+            <mat-icon [hidden]="!isHoverInsolite" class="icone-image">landscape</mat-icon>
             <img mat-card-image src="../../../assets/logements/bulle_out.jpg">
             <mat-card-title>Insolite</mat-card-title>
             <div class="descriptif">Type de logement bientôt proposé par le clos d'Adam.</div>
@@ -44,19 +44,16 @@
             <mat-card-actions><a class="btn btn-primary" >Voir l'hébergement</a></mat-card-actions>
           </mat-card>
 
-          <!-- Portable -->
-          <app-detail-logement *ngIf="typeLogement == 'insolite' && telephonePortable" [typeLogement]="typeLogement"></app-detail-logement>
-
-
           <mat-card class="card col"
           [ngClass]="{'selectionne' : typeLogement == 'gite'}"
-          (click)="typeLogement='gite'"
+          (click)="goToLogement('gite')"
           (mouseenter)="isHoverGite = true"
           (mouseleave)="isHoverGite = false">
             <mat-icon [hidden]="!isHoverGite" class="icone-image">home</mat-icon>
-            <img mat-card-image src="../../../assets/logements/chambre_hote_in.jpg">
+            <img mat-card-image src="../../../assets/logements/Chambre_Hote_Presentation.jpg">
             <mat-card-title>Gîte</mat-card-title>
-            <div class="descriptif">Ceci est un bref texte decrivant le type de logement proposé dans cette carte ainsi que d'autres elements liés.</div>
+            <div class="descriptif">Gîte de caractère pour les amoureux de l’authenticité, du calme et du confort.
+              <p><b>4 à 6 personnes</b></p></div>
             <mat-card-content>
               <div class="bold-text">Capacité :</div>
               <mat-icon>person</mat-icon>
@@ -70,16 +67,13 @@
             <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
           </mat-card>
 
-          <!-- Portable -->
-          <app-detail-logement *ngIf="typeLogement == 'gite' && telephonePortable" [typeLogement]="typeLogement"></app-detail-logement>
-
           <mat-card class="card col disabled"
             [ngClass]="{'selectionne' : typeLogement == 'camping-car'}"
             (click)="typeLogement='camping-car'"
             (mouseenter)="isHoverCampingCar = true"
             (mouseleave)="isHoverCampingCar = false">
             <mat-icon [hidden]="!isHoverCampingCar" class="icone-image">airport_shuttle</mat-icon>
-            <img mat-card-image src="../../../assets/logements/camping-car.jpg">
+            <img mat-card-image src="../../../assets/logements/Camping_Car_Presentation.jpg">
             <mat-card-title>Emlacement Camping car</mat-card-title>
             <div class="descriptif">Type de logement bientôt proposé par le clos d'Adam.</div>
             <mat-card-content>
@@ -89,10 +83,6 @@
             </mat-card-content>
             <mat-card-actions><a class="btn btn-primary">Voir l'hébergement</a></mat-card-actions>
           </mat-card>
-          <app-detail-logement *ngIf="typeLogement == 'camping-car' && telephonePortable" [typeLogement]="typeLogement"></app-detail-logement>
         </div>
   </div>
 </div>
-<!-- Portable -->
-
-<app-detail-logement *ngIf="typeLogement != '' && !telephonePortable" [typeLogement]="typeLogement"></app-detail-logement>

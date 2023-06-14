@@ -25,9 +25,6 @@ export class LogementsComponent implements OnInit {
   }
 
   goToReservations(typeLogement: String){
-    let text = "Au clic sur une des cartes de réservation, l'application affichera la page de réservation du logement souhaité avec les détails de celui-ci, ainsi qu'un bouton permettant de réserver ce logement."
-    this.popup.open(text);
-    /*
     switch(typeLogement) {
       case 'insolite' :
         this.router.navigate(['/insolite']);
@@ -38,7 +35,6 @@ export class LogementsComponent implements OnInit {
       case 'gite' :
         this.router.navigate(['/gite']);
         break;
-
-    }*/
+    }
   }
 }

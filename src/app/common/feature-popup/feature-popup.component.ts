@@ -1,27 +1,24 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-feature-popup',
   templateUrl: './feature-popup.component.html',
   styleUrls: ['./feature-popup.component.css']
 })
-export class FeaturePopupComponent implements OnInit {
+export class FeaturePopupComponent {
 
   @ViewChild('featurePopup', {static: false}) popup!: ElementRef;
 
-  text: string= "";
-
-  ngOnInit(): void {
+  open() {
+    this.popup.nativeElement.style.display = 'flex';
   }
 
-  open(text: string) {
-    this.popup.nativeElement.style.display = 'flex';
-    this.text=text;
+  validation() {
+    this.popup.nativeElement.style.display = 'none';
   }
 
   close() {
     this.popup.nativeElement.style.display = 'none';
-    this.text="";
   }
 }
 
